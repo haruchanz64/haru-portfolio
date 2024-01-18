@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 15px;
+  }
+
+  body {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 1.6em;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+  }
+
+  /* =========== NAVIGATION BAR ========= */
+  header {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav_brand {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  /* =========== ABOUT AREA ========= */
+
+  .about-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro_hi {
+    margin-bottom: 20px;
+  }
+
+  .intro_tagline {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro_contact {
+    font-size: 0.7em;
+    font-weight: 200;
+    padding: 10px 0px;
+    width: 100%;
+  }
+
+  .intro_profile {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro_profile img {
+    width: 80%;
+    object-fit: cover;
+    height: 50%;
+    border: 0px solid;
+    border-radius: 50%;
+  }
+
+  #email:hover {
+    color: #ffffff;
+  }
+
+  .skills-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .skills-area_label,
+  .skills-area_title {
+    padding: 20px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .skills-area_title {
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+
+  .skills-area_skills {
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  .skills-area li {
+    margin: 0px;
+    padding: 10px 0;
+  }
+
+  /* =========== PROJECT AREA ========= */
+  .projects-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    font-size: 0.8em;
+  }
+
+  .projects-area_title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+  }
+
+  .projects-area_game-cover{
+    text-align: center;
+  }
+
+  .projects-area_game-cover img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .projects-area h3 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  /* =========== FOOTER ========= */
+  footer {
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-content .contacts {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .footer-content .contacts li {
+    display: block;
+    margin-right: 16px;
+    color: #ffffff;
+    line-height: 60px;
+  }
+
+  .contacts li a {
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .intro {
+      flex-direction: column-reverse !important;
+      position: relative;
+      bottom: 50px;
+    }
+
+    .intro_profile img {
+      width: 40%;
+    }
+
+    .intro_profile {
+      margin-bottom: 20px;
+    }
+
+    .footer-content {
+      flex-direction: column;
+    }
+
+    .footer-content .author {
+      width: 100%;
+    }
+
+    .footer-content .contacts {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
