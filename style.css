@@ -13,7 +13,7 @@
   body {
     background-color: #000000;
     color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
+    font-family: "Inconsolata", monospace;
     font-weight: 200;
     font-size: 1.6em;
   }
@@ -121,6 +121,37 @@
   .skills-area li {
     margin: 0px;
     padding: 10px 0;
+  }
+
+  .background-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .background-area_content,
+  .background-area_title {
+    padding: 0;
+    font-weight: 100;
+    padding: 100px 0;
+  }
+
+  .background-area_title{
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 0;
+    text-transform: capitalize;
+  }
+
+  .background-area_content{
+    color: #ffffff;
+    font-size: 0.75em;
+    padding: 10px 0;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   /* =========== PROJECT AREA ========= */
