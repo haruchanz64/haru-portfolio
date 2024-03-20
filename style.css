@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #171219;
-  color: #f2fbeb;
+  background-color: #4b475c;
+  color: #d7dedc;
   font-family: Raleway, "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 1.6em;
@@ -22,9 +22,9 @@ body {
 a,
 a:hover {
   text-decoration: none;
-  color: #f2fbeb;
+  color: #d7dedc;
   text-decoration: underline;
-  text-decoration-color: #f2fbeb;
+  text-decoration-color: #d7dedc;
 }
 
 /* =========== NAVIGATION BAR ========= */
@@ -92,7 +92,7 @@ header {
 }
 
 #email:hover {
-  color: #f2fbeb;
+  color: #d7dedc;
 }
 
 .skills-area {
@@ -110,7 +110,7 @@ header {
 }
 
 .skills-area_title {
-  color: #f2fbeb;
+  color: #d7dedc;
   font-size: 1.2em;
   padding: 20px 0;
 }
@@ -141,7 +141,7 @@ header {
 }
 
 .background-area_title {
-  color: #f2fbeb;
+  color: #d7dedc;
   font-size: 1.5em;
   padding: 10px 0;
   text-transform: uppercase;
@@ -149,7 +149,7 @@ header {
 }
 
 .background-area_content {
-  color: #f2fbeb;
+  color: #d7dedc;
   font-size: 0.75em;
   padding: 10px 0;
   font-weight: lighter;
@@ -180,7 +180,7 @@ header {
 }
 
 .projects-area_title {
-  color: #f2fbeb;
+  color: #d7dedc;
   font-weight: 400;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ header {
 }
 
 .projects-area h3 {
-  color: #f2fbeb;
+  color: #d7dedc;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -226,12 +226,12 @@ footer {
 .footer-content .contacts li {
   display: block;
   margin-right: 16px;
-  color: #f2fbeb;
+  color: #d7dedc;
   line-height: 60px;
 }
 
 .contacts li a {
-  color: #f2fbeb;
+  color: #d7dedc;
 }
 
 @media screen and (max-width: 768px) {
