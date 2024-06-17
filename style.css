@@ -86,8 +86,6 @@ header {
   width: 80%;
   object-fit: cover;
   height: 50%;
-  border: 5px solid;
-  border-color: #F8F9FA;
   border-radius: 50%;
 }
 
