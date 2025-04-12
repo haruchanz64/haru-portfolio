@@ -83,9 +83,9 @@ header {
 }
 
 .intro_profile img {
-  width: 80%;
+  width: 100%;
   object-fit: cover;
-  height: 50%;
+  height: 100%;
   border-radius: 50%;
 }
 
