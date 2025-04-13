@@ -260,3 +260,29 @@ footer {
     margin-top: 40px;
   }
 }
+
+.request-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.modern-button {
+  padding: 10px 20px;
+  background-color: #F8F9FA;
+  color: #181B1E;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.modern-button:hover {
+  background-color: #d7dedc;
+  color: #000;
+}
