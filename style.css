@@ -1,13 +1,17 @@
+/* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-* {
+/* Global Styles */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 12px;
+  font-size: 18px;
   scroll-behavior: smooth;
 }
 
@@ -16,15 +20,18 @@ body {
   color: #F8F9FA;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
-a,
-a:hover {
-  text-decoration: none;
+a {
   color: #F8F9FA;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #1e90ff;
   text-decoration: underline;
-  text-decoration-color: #F8F9FA;
 }
 
 /* =========== NAVIGATION BAR ========= */
@@ -33,21 +40,92 @@ header {
   padding: 10px 0;
 }
 
-.nav_brand {
-  text-transform: uppercase;
-  font-size: 1.5em;
+.custom-navbar {
+  background-color: #181B1E;
+  border-bottom: 1px solid #2c2f33;
+  z-index: 9999;
+  display: none; /* Hide by default on desktop */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
-/* =========== ABOUT AREA ========= */
+.navbar-nav .nav-item {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
 
+.navbar-nav .nav-link {
+  font-size: 1em;
+  text-align: center;
+}
+
+.navbar-nav .nav-link i {
+  margin: 0;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .custom-navbar {
+    display: block; /* Show on mobile */
+  }
+
+  .navbar-nav {
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+
+  /* Mobile intro changes */
+  .intro {
+    flex-direction: column-reverse;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .intro_profile img {
+    width: 40%;
+  }
+
+  .intro_profile {
+    margin-bottom: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content .contacts {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+/* =========== ABOUT AREA ========= */
 .about-area {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
   height: 100vh;
-  width: 100%;
 }
 
 .intro {
@@ -57,29 +135,33 @@ header {
 }
 
 .intro_hi {
+  font-size: 5em;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .intro_tagline {
-  width: 100%;
-  position: relative;
-  font-weight: 300;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.4;
   margin-bottom: 20px;
 }
 
-.intro_contact {
-  font-size: 0.7em;
-  font-weight: 200;
-  padding: 10px 0px;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .intro_hi {
+    font-size: 2.5em;
+  }
+
+  .intro_tagline {
+    font-size: 1.5em;
+  }
 }
 
-.intro_profile {
+.intro_contact {
+  font-size: 1em;
+  font-weight: 200;
+  padding: 10px 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .intro_profile img {
@@ -89,120 +171,91 @@ header {
   border-radius: 50%;
 }
 
-#email:hover {
-  color: #F8F9FA;
-}
-
-.skills-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0;
-}
-
-.skills-area_label,
-.skills-area_title {
-  padding: 20px 0;
+.contact-message {
+  font-size: 1.25em;
+  margin-bottom: 10px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
-.skills-area_title {
-  color: #F8F9FA;
-  font-size: 1.2em;
-  padding: 20px 0;
+/* =========== SKILLS SECTION ========= */
+.skills-area {
+  padding: 40px 0;
+}
+
+.skills-area_title,
+.skills-area_label,
+.skills-area_skills li {
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .skills-area_skills {
-  list-style: none;
-  padding: 0;
-  margin-left: 15px;
+  list-style-type: none;
 }
 
-.skills-area li {
-  margin: 0px;
-  padding: 10px 0;
+.skills-area_skills li {
+  margin-bottom: 8px;
 }
 
-.background-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
+@media screen and (max-width: 768px) {
+  .skills-area {
+    padding: 20px 0;
+  }
+
+  .skills-area_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skills-area_label {
+    margin-bottom: 10px;
+  }
+
+  .skills-area_skills li {
+    margin-bottom: 6px;
+  }
+
+  .skills-area .col-md-3,
+  .skills-area .col-md-2 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .skills-area .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.background-area_content,
-.background-area_title {
-  padding: 0;
-  font-weight: 100;
-  padding: 100px 0;
-}
-
-.background-area_title {
-  color: #F8F9FA;
-  font-size: 1.5em;
-  padding: 10px 0;
-  text-transform: uppercase;
-  padding-bottom: 40px;
-}
-
-.background-area_content {
-  color: #F8F9FA;
-  font-size: 0.75em;
-  padding: 10px 0;
-  font-weight: lighter;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.background-area_container {
-  margin-inline: auto;
-  display: flex;
-  max-width: 42rem;
-  gap: 2rem;
-}
-
-.background-area_title-container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* =========== PROJECT AREA ========= */
+/* =========== PROJECTS AREA ========= */
 .projects-area {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 100px 0;
-  font-size: 0.8em;
+  justify-content: center;
+  padding: 20px;
 }
 
-.projects-area_title {
-  color: #F8F9FA;
-  font-weight: 400;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  padding-bottom: 40px;
-}
-
-.projects-area_game-cover {
-  text-align: center;
-}
-
-.projects-area_game-cover img {
-  height: 100%;
+.iframe-wrapper {
+  position: relative;
   width: 100%;
+  max-width: 900px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 }
 
-.projects-area h3 {
-  color: #F8F9FA;
-  text-transform: uppercase;
-  font-weight: 400;
+.iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* =========== FOOTER ========= */
 footer {
-  overflow: hidden;
   padding: 20px;
   width: 100%;
 }
@@ -228,61 +281,78 @@ footer {
   line-height: 60px;
 }
 
+/* Hover effect for contact icons */
 .contacts li a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contacts li a:hover {
   color: #F8F9FA;
+  transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-  .intro {
-    flex-direction: column-reverse !important;
-    position: relative;
-    bottom: 50px;
-  }
-
-  .intro_profile img {
-    width: 40%;
-  }
-
-  .intro_profile {
-    margin-bottom: 20px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-content .author {
-    width: 100%;
-  }
-
-  .footer-content .contacts {
-    width: 100%;
-    margin-top: 40px;
-  }
+.contacts li a i {
+  transition: transform 0.3s ease;
 }
 
-.request-buttons {
+.contacts li a:hover i {
+  transform: translateY(-4px); /* Moved upward on hover */
+}
+
+.contacts {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
+/* Remove the blue outline (focus ring) on hover/focus */
+.contacts li a:focus,
+.contacts li a:hover {
+  outline: none;
+  box-shadow: none; /* Removed the blue box shadow */
+}
+
+/* =============================== 
+   Buttons and Styles 
+   =============================== */
 .modern-button {
   padding: 10px 20px;
-  background-color: #F8F9FA;
+  background: linear-gradient(145deg, #f8f9fa, #e4e5e6);
   color: #181B1E;
   border-radius: 999px;
   font-weight: 500;
-  font-size: 0.85em;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1em;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .modern-button:hover {
-  background-color: #d7dedc;
+  background: linear-gradient(145deg, #d7dedc, #c6c7c8);
   color: #000;
+  transform: scale(1.03);
+}
+
+.modern-button i {
+  transition: transform 0.3s ease;
+}
+
+.modern-button:hover i {
+  transform: translateX(4px);
+}
+
+/* Improve iframe scaling */
+.projects-area iframe {
+  width: 100%;
+  max-width: 552px;
+}
+
+/* Responsive images */
+.intro_profile img {
+  max-width: 100%;
+  height: auto;
 }
