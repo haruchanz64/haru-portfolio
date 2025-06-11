@@ -1,235 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aron Jake Radam</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="https://i.imgur.com/XgL8VEj.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a147d6b708.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aron Jake Radam</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    crossorigin="anonymous" />
-  <link rel="icon" href="https://i.imgur.com/XgL8VEj.png" />
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a147d6b708.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-navbar">
-    <div class="container">
-      <!-- Remove the navbar-toggler button to prevent the burger menu on mobile -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto"> <!-- Centered Navbar Items on Desktop -->
-          <li class="nav-item">
-            <a class="nav-link" href="#about"><i class="fa fa-user"></i></a> <!-- About Icon -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills"><i class="fa fa-cogs"></i></a> <!-- Skills Icon -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects"><i class="fa fa-briefcase"></i></a> <!-- Projects Icon -->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"><i class="fa fa-envelope"></i></a> <!-- Contact Icon -->
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <section id="about" class="about-area">
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-navbar">
       <div class="container">
-        <div class="row intro">
-          <div class="col-md-8">
-            <div class="intro_hi">Hello!</div>
-            <div class="intro_tagline">
-              I'm <b style="font-weight: 1000"> Aron Jake S. Radam</b>, a passionate game programmer with a love for
-              coding and developing video games.
-            </div>
-            <div class="intro_contact">
-              <p class="contact-message">Feel free to reach out to me if you want to connect!</p>
-              <a href="mailto:radam.aronjake@gmail.com?subject=Let's%20Connect" class="modern-button contact-button"
-                aria-label="Contact Aron via Email">
-                <i class="fa fa-envelope"></i> Contact Me
-              </a>
-            </div>
-
-          </div>
-          <div class="col-md-4 intro_profile">
-            <img src="res/profile_new.webp" alt="Profile photo of Aron Jake Radam" loading="lazy" decoding="async" />
-          </div>
+        <!-- Remove the navbar-toggler button to prevent the burger menu on mobile -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <!-- Centered Navbar Items on Desktop -->
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa fa-user"></i></a>
+              <!-- About Icon -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i class="fa fa-cogs"></i></a>
+              <!-- Skills Icon -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"
+                ><i class="fa fa-briefcase"></i
+              ></a>
+              <!-- Projects Icon -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fa fa-envelope"></i
+              ></a>
+              <!-- Contact Icon -->
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-<section id="skills" class="skills-area">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="skills-area_title">Skill Set</div>
-      </div>
-
-      <div class="col-md-2">
-        <div class="skills-area_label">Programming Languages</div>
-        <ul class="skills-area_skills">
-          <li>C#</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>C</li>
-          <li>C++</li>
-          <li>PHP</li>
-          <li>Dart</li>
-          <li>Rust</li>
-        </ul>
-      </div>
-
-      <div class="col-md-2">
-        <div class="skills-area_label">Tools / Frameworks</div>
-        <ul class="skills-area_skills">
-          <li><a href="https://git-scm.com" target="_blank">Git</a></li>
-          <li><a href="https://trello.com/" target="_blank">Trello</a></li>
-          <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
-          <li><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a></li>
-          <li><a href="https://www.jetbrains.com/rider/" target="_blank">Rider</a></li>
-          <li><a href="https://www.jetbrains.com/rustrover/" target="_blank">RustRover</a></li>
-          <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></li>
-          <li><a href="https://www.jetbrains.com/clion/" target="_blank">CLion</a></li>
-          <li><a href="https://obsidian.md/" target="_blank">Obsidian</a></li>
-          <li><a href="https://flutter.dev/" target="_blank">Flutter</a></li>
-          <li><a href="https://bevyengine.org/" target="_blank">Bevy</a></li>
-          <li><a href="https://www.pygame.org/" target="_blank">PyGame</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-2">
-        <div class="skills-area_label">Game Engines</div>
-        <ul class="skills-area_skills">
-          <li><a href="https://unity.com/" target="_blank">Unity</a></li>
-          <li><a href="https://godotengine.org/" target="_blank">Godot</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-2">
-        <div class="skills-area_label">Fields</div>
-        <ul class="skills-area_skills">
-          <li>Tools Programmer</li>
-          <li>Gameplay Programmer</li>
-          <li>Game Design</li>
-          <li>Quality Assurance</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <section id="projects" class="projects-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="projects-area_title">Projects</div>
-          </div>
-          <div class="col-md-9">
-            <!-- Projects -->
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Night Light</h5>
-                <p><em>A 2D platformer about collecting orbs.</em></p>
-                <iframe src="https://itch.io/embed/2493462" width="100%" height="167" frameborder="0"
-                  loading="lazy"></iframe>
+    <main>
+      <section id="about" class="about-area">
+        <div class="container">
+          <div class="row intro">
+            <div class="col-md-8">
+              <div class="intro_hi">Hello!</div>
+              <div class="intro_tagline">
+                I'm <b style="font-weight: 1000"> Aron Jake S. Radam</b>, a
+                passionate game programmer with a love for coding and developing
+                video games.
               </div>
-            </div>
-
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Cyclescape</h5>
-                <p><em>A 2D top-down educational adventure game about menstrual cycle.</em></p>
-                <iframe src="https://itch.io/embed/2493449" width="100%" height="167" frameborder="0"
-                  loading="lazy"></iframe>
-              </div>
-            </div>
-
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Orders Please</h5>
-                <p><em>A 2D click and drag video game focused on managing a street food vendo.</em></p>
-                <iframe src="https://itch.io/embed/2493469" width="100%" height="167" frameborder="0"
-                  loading="lazy"></iframe>
-              </div>
-            </div>
-
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Trash Frenzy</h5>
-                <p><em>A 2D Fast Paced Action Side Scroller Educational Mobile Game about water pollution awareness</em>
+              <div class="intro_contact">
+                <p class="contact-message">
+                  Feel free to reach out to me if you want to connect!
                 </p>
-                <iframe src="https://itch.io/embed/3386146" width="100%" height="167" frameborder="0"
-                  loading="lazy"></iframe>
-              </div>
-            </div>
-
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Debug Command System</h5>
-                <p><em>An in-game Unity command console for developers to debug or trigger actions at runtime.</em></p>
-                <a href="https://github.com/haruchanz64/DebugCommandSystem" target="_blank" rel="noopener">
-                  <img
-                    src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem"
-                    alt="Debug Command System GitHub Card" style="width:100%; max-width:600px;">
+                <a
+                  href="mailto:radam.aronjake@gmail.com?subject=Let's%20Connect"
+                  class="modern-button contact-button"
+                  aria-label="Contact Aron via Email"
+                >
+                  <i class="fa fa-envelope"></i> Contact Me
                 </a>
               </div>
             </div>
-
-            <div class="row pb-5">
-              <div class="col-md-8">
-                <h5>Scriptable Batch Tool</h5>
-                <p><em>A Unity Editor Window tool designed to streamline the creation and management of multiple ScriptableObject instances.</em></p>
-                <a href="https://github.com/haruchanz64/ScriptableBatchTool" target="_blank" rel="noopener">
-                  <img
-                    src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool"
-                    alt="Debug Command System GitHub Card" style="width:100%; max-width:600px;">
-                </a>
-              </div>
+            <div class="col-md-4 intro_profile">
+              <img
+                src="res/profile_new.webp"
+                alt="Profile photo of Aron Jake Radam"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-
           </div>
         </div>
+      </section>
+
+      <section id="skills" class="skills-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="skills-area_title">Skill Set</div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="skills-area_label">Programming Languages</div>
+              <ul class="skills-area_skills">
+                <li>C#</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Rust</li>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <div class="skills-area_label">Tools</div>
+              <ul class="skills-area_skills">
+                <li><a href="https://git-scm.com" target="_blank">Git</a></li>
+                <li>
+                  <a href="https://trello.com/" target="_blank">Trello</a>
+                </li>
+                <li>
+                  <a href="https://www.figma.com/" target="_blank">Figma</a>
+                </li>
+                <li>
+                  <a href="https://www.jetbrains.com/idea/" target="_blank"
+                    >IntelliJ IDEA</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.jetbrains.com/rider/" target="_blank"
+                    >Rider</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.jetbrains.com/rustrover/" target="_blank"
+                    >RustRover</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.jetbrains.com/pycharm/" target="_blank"
+                    >PyCharm</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.jetbrains.com/clion/" target="_blank"
+                    >CLion</a
+                  >
+                </li>
+                <li>
+                  <a href="https://obsidian.md/" target="_blank">Obsidian</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <div class="skills-area_label">Game Engines / Frameworks</div>
+              <ul class="skills-area_skills">
+                <li><a href="https://unity.com/" target="_blank">Unity</a></li>
+                <li>
+                  <a href="https://godotengine.org/" target="_blank">Godot</a>
+                </li>
+                <li>
+                  <a href="https://bevyengine.org/" target="_blank">Bevy</a>
+                </li>
+                <li>
+                  <a href="https://www.rpgmakerweb.com/" target="_blank"
+                    >RPG Maker</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.pygame.org/" target="_blank">PyGame</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <div class="skills-area_label">Fields</div>
+              <ul class="skills-area_skills">
+                <li>Tools Programmer</li>
+                <li>Gameplay Programmer</li>
+                <li>Game Design</li>
+                <li>Quality Assurance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="projects-area_title">Projects</div>
+            </div>
+            <div class="col-md-9">
+              <!-- Projects -->
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Night Light</h5>
+                  <p><em>A 2D platformer about collecting orbs.</em></p>
+                  <iframe
+                    src="https://itch.io/embed/2493462"
+                    width="100%"
+                    height="167"
+                    frameborder="0"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Cyclescape</h5>
+                  <p>
+                    <em
+                      >A 2D top-down educational adventure game about menstrual
+                      cycle.</em
+                    >
+                  </p>
+                  <iframe
+                    src="https://itch.io/embed/2493449"
+                    width="100%"
+                    height="167"
+                    frameborder="0"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Orders Please</h5>
+                  <p>
+                    <em
+                      >A 2D click and drag video game focused on managing a
+                      street food vendo.</em
+                    >
+                  </p>
+                  <iframe
+                    src="https://itch.io/embed/2493469"
+                    width="100%"
+                    height="167"
+                    frameborder="0"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Trash Frenzy</h5>
+                  <p>
+                    <em
+                      >A 2D Fast Paced Action Side Scroller Educational Mobile
+                      Game about water pollution awareness</em
+                    >
+                  </p>
+                  <iframe
+                    src="https://itch.io/embed/3386146"
+                    width="100%"
+                    height="167"
+                    frameborder="0"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Debug Command System</h5>
+                  <p>
+                    <em
+                      >An in-game Unity command console for developers to debug
+                      or trigger actions at runtime.</em
+                    >
+                  </p>
+                  <a
+                    href="https://github.com/haruchanz64/DebugCommandSystem"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem"
+                      alt="Debug Command System GitHub Card"
+                      style="width: 100%; max-width: 600px"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="row pb-5">
+                <div class="col-md-8">
+                  <h5>Scriptable Batch Tool</h5>
+                  <p>
+                    <em
+                      >A Unity Editor Window tool designed to streamline the
+                      creation and management of multiple ScriptableObject
+                      instances.</em
+                    >
+                  </p>
+                  <a
+                    href="https://github.com/haruchanz64/ScriptableBatchTool"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool"
+                      alt="Debug Command System GitHub Card"
+                      style="width: 100%; max-width: 600px"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-content">
+        <div class="author">
+          Developed by Aron Jake Radam | 2025<br />
+          Inspired by
+          <a href="https://joebrogers.com/" target="_blank" rel="noopener"
+            >Joeb Rogers</a
+          >
+        </div>
+        <ul class="contacts">
+          <!-- Primary Contact -->
+          <li>
+            <a href="mailto:radam.aronjake@gmail.com" aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+
+          <!-- Professional Links -->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/radamaj/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/haruchanz64"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+
+          <!-- Portfolio / Creative Links -->
+          <li>
+            <a
+              href="https://haruchanz64.itch.io"
+              target="_blank"
+              aria-label="Itch.io"
+              ><i class="fa-brands fa-itch-io"></i
+            ></a>
+          </li>
+
+          <!-- Social Media Links -->
+          <li>
+            <a
+              href="https://www.facebook.com/RadamAronJakeS"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
       </div>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <div class="container footer-content">
-      <div class="author">
-        Developed by Aron Jake Radam | 2025<br>
-        Inspired by <a href="https://joebrogers.com/" target="_blank" rel="noopener">Joeb Rogers</a>
-      </div>
-      <ul class="contacts">
-        <!-- Primary Contact -->
-        <li><a href="mailto:radam.aronjake@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
-
-        <!-- Professional Links -->
-        <li><a href="https://www.linkedin.com/in/radamaj/" target="_blank" aria-label="LinkedIn"><i
-              class="fa-brands fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/haruchanz64" target="_blank" aria-label="GitHub"><i
-              class="fa-brands fa-github"></i></a></li>
-
-        <!-- Portfolio / Creative Links -->
-        <li><a href="https://haruchanz64.itch.io" target="_blank" aria-label="Itch.io"><i
-              class="fa-brands fa-itch-io"></i></a></li>
-
-        <!-- Social Media Links -->
-        <li><a href="https://www.facebook.com/RadamAronJakeS" target="_blank" aria-label="Facebook"><i
-              class="fa-brands fa-facebook"></i></a></li>
-      </ul>
-    </div>
-  </footer>
-  <!-- Required for Bootstrap navbar toggle to work -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <!-- Active section nav highlighting -->
-  <script src="js/SmoothScroll.js"></script>
-</body>
-
+    </footer>
+    <!-- Required for Bootstrap navbar toggle to work -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Active section nav highlighting -->
+    <script src="js/SmoothScroll.js"></script>
+  </body>
 </html>
