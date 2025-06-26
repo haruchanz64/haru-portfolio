@@ -1,5 +1,5 @@
 /* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Global Styles */
 *,
@@ -16,15 +16,26 @@ html {
 }
 
 body {
-  background-color: #181B1E;
-  color: #F8F9FA;
-  font-family: 'Inter', sans-serif;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #f8f9fa;
+  font-family: "Inter", sans-serif;
   font-weight: 200;
   font-size: 1em;
 }
 
 a {
-  color: #F8F9FA;
+  color: #f8f9fa;
   text-decoration: none;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -130,7 +141,6 @@ a:hover {
     font-size: 1.1em;
   }
 }
-
 
 .intro_contact {
   font-size: 1em;
@@ -261,7 +271,7 @@ footer {
 }
 
 .contacts li a:hover {
-  color: #F8F9FA;
+  color: #f8f9fa;
   transform: scale(1.1);
 }
 
@@ -291,7 +301,7 @@ footer {
 .modern-button {
   padding: 10px 20px;
   background: linear-gradient(145deg, #f8f9fa, #e4e5e6);
-  color: #181B1E;
+  color: #181b1e;
   border-radius: 999px;
   font-weight: 500;
   font-size: 1em;
@@ -337,14 +347,14 @@ footer {
 }
 
 .nav-tabs .nav-link {
-  color: #F8F9FA;
+  color: #f8f9fa;
   font-weight: 400;
   transition: background 0.3s, color 0.3s;
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #181B1E;
-  color: #F8F9FA;
+  background-color: #181b1e;
+  color: #f8f9fa;
   border: none;
   border-radius: 5px;
 }
