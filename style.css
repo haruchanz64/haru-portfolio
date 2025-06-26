@@ -34,40 +34,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =========== NAVIGATION BAR ========= */
-header {
-  width: 100%;
-  padding: 10px 0;
-}
-
-.custom-navbar {
-  background-color: #181B1E;
-  border-bottom: 1px solid #2c2f33;
-  z-index: 9999;
-  display: none; /* Hide by default on desktop */
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.navbar-nav .nav-item {
-  display: flex;
-  justify-content: center;
-  margin: 0 10px;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1em;
-  text-align: center;
-}
-
-.navbar-nav .nav-link i {
-  margin: 0;
-}
-
 /* Mobile View */
 @media screen and (max-width: 768px) {
   .custom-navbar {
@@ -122,22 +88,29 @@ header {
 
 /* =========== ABOUT AREA ========= */
 .about-area {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  text-align: center;
 }
 
 .intro {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.intro_text {
+  max-width: 700px;
+  margin-bottom: 20px;
 }
 
 .intro_hi {
   font-size: 5em;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .intro_tagline {
@@ -147,15 +120,17 @@ header {
   margin-bottom: 20px;
 }
 
+/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   .intro_hi {
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .intro_tagline {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 }
+
 
 .intro_contact {
   font-size: 1em;
@@ -281,7 +256,6 @@ footer {
   line-height: 60px;
 }
 
-/* Hover effect for contact icons */
 .contacts li a {
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -296,7 +270,7 @@ footer {
 }
 
 .contacts li a:hover i {
-  transform: translateY(-4px); /* Moved upward on hover */
+  transform: translateY(-4px);
 }
 
 .contacts {
@@ -305,16 +279,15 @@ footer {
   gap: 20px;
 }
 
-/* Remove the blue outline (focus ring) on hover/focus */
 .contacts li a:focus,
 .contacts li a:hover {
   outline: none;
-  box-shadow: none; /* Removed the blue box shadow */
+  box-shadow: none;
 }
 
 /* =============================== 
-   Buttons and Styles 
-   =============================== */
+  Buttons and Styles 
+  =============================== */
 .modern-button {
   padding: 10px 20px;
   background: linear-gradient(145deg, #f8f9fa, #e4e5e6);
