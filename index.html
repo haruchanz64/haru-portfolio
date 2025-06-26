@@ -64,22 +64,10 @@
                 passionate game programmer with a love for coding and developing
                 video games.
               </div>
-              <div class="intro_contact">
-                <p class="contact-message">
-                  Feel free to reach out to me if you want to connect!
-                </p>
-                <a
-                  href="mailto:radam.aronjake@gmail.com?subject=Let's%20Connect"
-                  class="modern-button contact-button"
-                  aria-label="Contact Aron via Email"
-                >
-                  <i class="fa fa-envelope"></i> Contact Me
-                </a>
-              </div>
             </div>
             <div class="col-md-4 intro_profile">
               <img
-                src="res/profile_new.webp"
+                src="https://i.imgur.com/XgL8VEj.png"
                 alt="Profile photo of Aron Jake Radam"
                 loading="lazy"
                 decoding="async"
@@ -105,8 +93,6 @@
                 <li>C</li>
                 <li>C++</li>
                 <li>Rust</li>
-                <li>Dart</li>
-                <li>MySQL</li>
               </ul>
             </div>
 
@@ -116,9 +102,6 @@
                 <li><a href="https://git-scm.com" target="_blank">Git</a></li>
                 <li>
                   <a href="https://trello.com/" target="_blank">Trello</a>
-                </li>
-                <li>
-                  <a href="https://www.figma.com/" target="_blank">Figma</a>
                 </li>
                 <li>
                   <a href="https://www.jetbrains.com/idea/" target="_blank"
@@ -145,9 +128,6 @@
                     >CLion</a
                   >
                 </li>
-                <li>
-                  <a href="https://obsidian.md/" target="_blank">Obsidian</a>
-                </li>
               </ul>
             </div>
 
@@ -169,9 +149,6 @@
                 <li>
                   <a href="https://www.pygame.org/" target="_blank">PyGame</a>
                 </li>
-                <li>
-                  <a href="https://flutter.dev/" target="_blank">Flutter</a>
-                </li>
               </ul>
             </div>
 
@@ -189,135 +166,87 @@
       </section>
 
       <section id="projects" class="projects-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="projects-area_title">Projects</div>
-            </div>
-            <div class="col-md-9">
-              <!-- Projects -->
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Night Light</h5>
-                  <p><em>A 2D platformer about collecting orbs.</em></p>
-                  <iframe
-                    src="https://itch.io/embed/2493462"
-                    width="100%"
-                    height="167"
-                    frameborder="0"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="projects-area_title">Projects</h2>
+        <ul class="nav nav-tabs justify-content-center" id="projectsTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="games-tab" data-toggle="tab" href="#games" role="tab">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tools-tab" data-toggle="tab" href="#tools" role="tab">Tools</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Cyclescape</h5>
-                  <p>
-                    <em
-                      >A 2D top-down educational adventure game about menstrual
-                      cycle.</em
-                    >
-                  </p>
-                  <iframe
-                    src="https://itch.io/embed/2493449"
-                    width="100%"
-                    height="167"
-                    frameborder="0"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
+    <div class="tab-content" id="projectsTabContent">
+      <!-- Games Section -->
+      <div class="tab-pane fade show active" id="games" role="tabpanel">
+        <div class="row">
+          <!-- Game 1 -->
+          <div class="col-md-6 mb-4">
+            <h5>Night Light</h5>
+            <p><em>You play the role of Lila as the chosen one to save the world from the curse of darkness. With your trusty companion Aria, 
+              traverse through five stages and collect scattered light orbs while avoiding enemies and dangerous hazards.</em></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2WEyH6xaqGk?si=RkQDZNZfHCOwmoeA" title="Night Light - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
 
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Orders Please</h5>
-                  <p>
-                    <em
-                      >A 2D click and drag video game focused on managing a
-                      street food vendo.</em
-                    >
-                  </p>
-                  <iframe
-                    src="https://itch.io/embed/2493469"
-                    width="100%"
-                    height="167"
-                    frameborder="0"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
+          <!-- Game 2 -->
+          <div class="col-md-6 mb-4">
+            <h5>Orders Please</h5>
+            <p><em>You're a street food vendor on campus, where your job is to satisfy students' cravings for delicious street food, but against the clock. Time is of the essence, so keep track of each customers request to ensure their hunger is satisfied with culinary delight.</em></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BuCFdMbFZus?si=XfBZMHHBtYtaJPxs" title="Orders Please - Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
 
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Trash Frenzy</h5>
-                  <p>
-                    <em
-                      >A 2D Fast Paced Action Side Scroller Educational Mobile
-                      Game about water pollution awareness</em
-                    >
-                  </p>
-                  <iframe
-                    src="https://itch.io/embed/3386146"
-                    width="100%"
-                    height="167"
-                    frameborder="0"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
+          <!-- Game 3 -->
+          <div class="col-md-6 mb-4">
+            <h5>Cyclescape</h5>
+            <p><em>Explore the four phases of menstrual cycle by playing as a little girl about herself being curious about menstrual cycle.</em></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/seB4NQnSA40?si=Ov7xwtThfil21-jX" title="Cyclescape - Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
 
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Debug Command System</h5>
-                  <p>
-                    <em
-                      >An in-game Unity command console for developers to debug
-                      or trigger actions at runtime.</em
-                    >
-                  </p>
-                  <a
-                    href="https://github.com/haruchanz64/DebugCommandSystem"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem"
-                      alt="Debug Command System GitHub Card"
-                      style="width: 100%; max-width: 600px"
-                    />
-                  </a>
-                </div>
-              </div>
+          <!-- Game 2 -->
+          <div class="col-md-6 mb-4">
+            <h5>Lifebound</h5>
+            <p><em>Can your bond withstand the trials ahead? Embark on a 3D underground world adventure with Sol and Luna to test your communication skills. Together, you'll explore the searing heat of life beneath the surface and bound across treacherous landscapes to solve puzzles to escape the misery.</em></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/PnV9KYkl3QY?si=leR5JJU-z0XplzeX" title="Lifebound - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
 
-              <div class="row pb-5">
-                <div class="col-md-8">
-                  <h5>Scriptable Batch Tool</h5>
-                  <p>
-                    <em
-                      >A Unity Editor Window tool designed to streamline the
-                      creation and management of multiple ScriptableObject
-                      instances.</em
-                    >
-                  </p>
-                  <a
-                    href="https://github.com/haruchanz64/ScriptableBatchTool"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <img
-                      src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool"
-                      alt="Debug Command System GitHub Card"
-                      style="width: 100%; max-width: 600px"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
+          <!-- Game 2 -->
+          <div class="col-md-6 mb-4">
+            <h5>Trash Frenzy</h5>
+            <p><em>Trash Frenzy takes place in five famous water tourist spots in the Philippines. The player controls Janitor — 
+              a robotic fish that is tasked to eliminate the pollution caused by the mad robot Atlantis and eliminate it once and for all.</em></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/_yQ9IA0cQ-A?si=Ch1_l1f5hEQT9h0G&amp;controls=1" title="Trash Frenzy - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+
+      <!-- Tools Section -->
+      <div class="tab-pane fade" id="tools" role="tabpanel">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5>Debug Command System</h5>
+            <p><em>A flexible and extendable developer debug console system for Unity projects, supporting typed commands, auto-completion, and command suggestions. Fully integrated with Unity's New Input System. </em></p>
+            <a href="https://github.com/haruchanz64/DebugCommandSystem/releases/tag/1.0" target="_blank">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem" alt="Debug Command System GitHub Card" style="width: 100%;">
+            </a>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Scriptable Batch Tool</h5>
+            <p><em>A Unity Editor Window tool designed to streamline the creation and management of multiple ScriptableObject instances. </em></p>
+            <a href="https://github.com/haruchanz64/ScriptableBatchTool/releases/tag/V1.0" target="_blank">
+              <img src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool" alt="Scriptable Batch Tool GitHub Card" style="width: 100%;">
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </div>
+</section>
 
     <footer id="contact">
       <div class="container footer-content">
@@ -379,12 +308,10 @@
     <!-- Required for Bootstrap navbar toggle to work -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <!-- Active section nav highlighting -->
     <script src="js/SmoothScroll.js"></script>
   </body>

@@ -356,3 +356,22 @@ footer {
   max-width: 100%;
   height: auto;
 }
+
+.projects-area_title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+  color: #F8F9FA;
+  font-weight: 400;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
