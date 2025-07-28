@@ -339,110 +339,212 @@
             </div>
         </div>
     </section>
-    <section id="skills" class="skills-area">
-    <div class="container">
-    <div class="row">
-    <div class="col-md-2">
-    <div class="skills-area_title">Skill Set</div>
+<section id="skills" class="skills-area">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="projects-area_title">Skill Set</h2>
     </div>
-    <div class="col-md-10 d-flex flex-wrap justify-content-start">
-    <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-    <div class="skills-area_label">Programming Languages</div>
-    <ul class="skills-area_skills">
-    <li>C#</li>
-    <li>Java</li>
-    <li>Python</li>
-    <li>C</li>
-    <li>C++</li>
-    <li>Rust</li>
-    <li>MySQL</li>
-    <li>PHP</li>
-    <li>Dart</li>
-    <li>Lua</li>
+
+    <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
+      <li class="nav-item"><a class="nav-link active" id="languages-tab" data-toggle="tab" href="#languages" role="tab">Languages</a></li>
+      <li class="nav-item"><a class="nav-link" id="engines-tab" data-toggle="tab" href="#engines" role="tab">Game Engines</a></li>
+      <li class="nav-item"><a class="nav-link" id="frameworks-tab" data-toggle="tab" href="#frameworks" role="tab">Frameworks</a></li>
+      <li class="nav-item"><a class="nav-link" id="tools-tab" data-toggle="tab" href="#devtools" role="tab">Tools</a></li>
     </ul>
-    </div>
-    <div class="col-lg-2 col-md-2 col-sm-6 mb-4">
-    <div class="skills-area_label">Game Engines</div>
-    <ul class="skills-area_skills">
-    <li><a href="https://unity.com/" target="_blank">Unity</a></li>
-    <li><a href="https://www.rpgmakerweb.com/" target="_blank">RPG Maker</a></li>
-    <li><a href="https://godotengine.org/" target="_blank">Godot</a></li>
-    <li><a href="https://www.roblox.com/create" target="_blank">Roblox Studio</a></li>
-    </ul>
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-    <div class="skills-area_label">Libraries / Frameworks</div>
-    <ul class="skills-area_skills">
-    <li><a href="https://bevyengine.org/" target="_blank">Bevy</a></li>
-    <li><a href="https://www.libsdl.org/" target="_blank">SDL</a></li>
-    <li><a href="https://flutter.dev/" target="_blank">Flutter</a></li>
-    </ul>
-    </div>
-    <div class="col-lg-2 col-md-2 col-sm-6 mb-4">
-    <div class="skills-area_label">Tools</div>
-    <ul class="skills-area_skills">
-    <li><a href="https://git-scm.com" target="_blank">Git</a></li>
-    <li><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a></li>
-    <li><a href="https://www.jetbrains.com/rider/" target="_blank">Rider</a></li>
-    <li><a href="https://www.jetbrains.com/rustrover/" target="_blank">RustRover</a></li>
-    <li><a href="https://clang.llvm.org/" target="_blank">Clang</a></li>
-    <li><a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a></li>
-    <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <footer id="contact">
-      <div class="container footer-content">
-        <div class="author">Developed by Aron Jake S. Radam | 2025<br /></div>
-        <ul class="contacts">
-          <!-- Primary Contact -->
-          <li>
-            <a href="mailto:radam.aronjake@gmail.com" aria-label="Email"
-              ><i class="fa-solid fa-envelope"></i
-              ></a>
-          </li>
-          <!-- Professional Links -->
-          <li>
-            <a
-              href="https://www.linkedin.com/in/radamaj/"
-              target="_blank"
-              aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin"></i
-              ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/haruchanz64"
-              target="_blank"
-              aria-label="GitHub"
-              ><i class="fa-brands fa-github"></i
-              ></a>
-          </li>
-          <!-- Portfolio / Creative Links -->
-          <li>
-            <a
-              href="https://haruchanz64.itch.io"
-              target="_blank"
-              aria-label="Itch.io"
-              ><i class="fa-brands fa-itch-io"></i
-              ></a>
-          </li>
-          <!-- Social Media Links -->
-          <li>
-            <a
-              href="https://www.facebook.com/RadamAronJakeS"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i
-              ></a>
-          </li>
-        </ul>
+
+    <div class="tab-content" id="skillsTabContent">
+      <!-- Programming Languages -->
+      <div class="tab-pane fade show active" id="languages" role="tabpanel">
+        <div class="row text-center">
+          <!-- Common languages -->
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" height="50">
+            <p class="mt-2">C#</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" height="50">
+            <p class="mt-2">Java</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" height="50">
+            <p class="mt-2">Python</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" height="50">
+            <p class="mt-2">C</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" height="50">
+            <p class="mt-2">C++</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/rust/rust-original.svg" alt="Rust" height="50">
+            <p class="mt-2">Rust</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" height="50">
+            <p class="mt-2">MySQL</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" height="50">
+            <p class="mt-2">PHP</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" height="50">
+            <p class="mt-2">Dart</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/lua/lua-plain.svg" alt="Lua" height="50">
+            <p class="mt-2">Lua</p>
+          </div>
+        </div>
       </div>
-    </footer>
+
+      <!-- Game Engines -->
+      <div class="tab-pane fade" id="engines" role="tabpanel">
+        <div class="row text-center">
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" height="50">
+            <p class="mt-2">Unity</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot" height="50">
+            <p class="mt-2">Godot</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- RPG Maker -->
+            <img src="https://cdn.prod.website-files.com/5efc0159f9a97ba05a8b2902/5f210794ef477ae597bb8467_icon-rpg-maker-mz.webp" alt="RPG Maker" height="50">
+            <p class="mt-2">RPG Maker</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- Roblox Studio -->
+            <img src="https://i.redd.it/roblox-studio-new-logo-being-a-reference-of-gamemaker-v0-6lluskrtsnwe1.png?width=225&format=png&auto=webp&s=4c00dfa6db100ea3ee5d9de44d8ae8a944def18e" alt="Roblox Studio" height="50">
+            <p class="mt-2">Roblox Studio</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks / Libraries -->
+      <div class="tab-pane fade" id="frameworks" role="tabpanel">
+        <div class="row text-center">
+          <div class="col-4 col-md-2 mb-4">
+            <!-- Bevy -->
+            <img src="https://bevyengine.org/assets/icon.png" alt="Bevy" height="50">
+            <p class="mt-2">Bevy</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- SDL -->
+            <img src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/sdl/sdl-plain.svg" alt="SDL" height="50">
+            <p class="mt-2">SDL</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" height="50">
+            <p class="mt-2">Flutter</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="tab-pane fade" id="devtools" role="tabpanel">
+        <div class="row text-center">
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" height="50">
+            <p class="mt-2">Git</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA" height="50">
+            <p class="mt-2">IntelliJ</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- JetBrains Rider Logo -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rider/rider-original.svg" alt="Rider" height="50">
+            <p class="mt-2">Rider</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- RustRover is new — fallback to JetBrains icon -->
+            <img src="https://flathub.org/_next/image?url=https%3A%2F%2Fdl.flathub.org%2Fmedia%2Fcom%2Fjetbrains%2FRustRover%2Fa16b1062bf8307bb509ba6f49a4a7f94%2Ficons%2F128x128%2Fcom.jetbrains.RustRover.png&w=128&q=100" alt="RustRover" height="50">
+            <p class="mt-2">RustRover</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <!-- Clang -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clion/clion-original.svg" alt="CLion" height="50">
+            <p class="mt-2">CLion</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" alt="PyCharm" height="50">
+            <p class="mt-2">PyCharm</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" height="50">
+            <p class="mt-2">VS Code</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" height="50">
+            <p class="mt-2">Notion</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" height="50">
+            <p class="mt-2">Figma</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" height="50">
+            <p class="mt-2">Blender</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Studio" height="50">
+            <p class="mt-2">Visual Studio</p>
+          </div>
+          <div class="col-4 col-md-2 mb-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" alt="Trello" height="50">
+            <p class="mt-2">Trello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer id="contact" class="contact-area py-5 text-light">
+  <div class="container">
+    <div class="row text-center">
+      <!-- Name & Email -->
+      <div class="col-md-6 mb-4">
+        <h3>Let's Connect</h3>
+        <p>Interested in working together or have a question?</p>
+        <a href="mailto:radam.aronjake@gmail.com" class="btn btn-outline-light mt-2">
+          <i class="fa-solid fa-envelope mr-2"></i> radam.aronjake@gmail.com
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="col-md-6 mb-4">
+        <h4>Find Me Online</h4>
+        <div class="d-flex justify-content-center mt-3 flex-wrap">
+          <a href="https://www.linkedin.com/in/radamaj/" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="LinkedIn">
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://github.com/haruchanz64" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="GitHub">
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+          <a href="https://haruchanz64.itch.io" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="Itch.io">
+            <i class="fa-brands fa-itch-io fa-lg"></i>
+          </a>
+          <a href="https://www.facebook.com/RadamAronJakeS" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="Facebook">
+            <i class="fa-brands fa-facebook fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <small>&copy; 2025 Aron Jake S. Radam. All rights reserved.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
     <!-- Required for Bootstrap navbar toggle to work -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -351,3 +351,14 @@ footer {
   border: none;
   border-radius: 5px;
 }
+
+.skills-area img {
+  transition: transform 0.2s ease;
+}
+.skills-area img:hover {
+  transform: scale(1.1);
+}
+.skills-area p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
