@@ -20,7 +20,6 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-size: 1em;
-  /* Apply the custom pattern with opacity */
   background-image: radial-gradient(rgba(248, 249, 250, 0.1) 2px, transparent 2px),
     radial-gradient(rgba(248, 249, 250, 0.1) 2px, transparent 2px);
   background-size: 32px 32px;
