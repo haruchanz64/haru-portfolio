@@ -361,3 +361,7 @@ footer {
   font-size: 0.9rem;
   margin-bottom: 0;
 }
+
+#background p {
+  text-align: justify;
+}
