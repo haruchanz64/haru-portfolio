@@ -24,7 +24,7 @@ body {
     radial-gradient(rgba(248, 249, 250, 0.1) 2px, transparent 2px);
   background-size: 32px 32px;
   background-position: 0 0, 16px 16px;
-  background-color: #181b1e;
+  background-color: #181b1ecb;
 }
 a {
   color: #f8f9fa;
@@ -345,7 +345,7 @@ footer {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #181b1e;
+  background-color: #181b1ecb;
   color: #f8f9fa;
   border: none;
   border-radius: 5px;
