@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aron Jake Radam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #333;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark mode styles */
+        body.dark {
+            background-color: #121212;
+            color: #eaeaea;
+        }
+        body.dark .container {
+            background: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+        }
+        body.dark h1 {
+            color: #f1f1f1;
+        }
+        body.dark a {
+            color: #4aa3ff;
+        }
+    </style>
+    <link rel="shortcut icon" href="/res/pfp - pixel.png" />
+</head>
+<body>
+    <div class="container">
+        <h1>Site Under Maintenance</h1>
+        <p>I am currently rebuilding my portfolio to reflect my new focus on mobile development.</p>
+        <p>Thank you for your patience. I look forward to sharing my new work with you soon!</p>
+        <p>In the meantime, you can connect with me on:</p>
+        <p>
+            <a href="https://www.linkedin.com/in/aronjakeradam">LinkedIn</a> |
+            <a href="https://github.com/haruchanz64">GitHub</a>
+        </p>
+    </div>
+
+    <script>
+        function applyTheme() {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.classList.add('dark');
+            } else {
+                document.body.classList.remove('dark');
+            }
+        }
+
+        // Apply theme on load
+        applyTheme();
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+    </script>
+</body>
+</html>
