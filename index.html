@@ -4,635 +4,607 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aron Jake Radam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      crossorigin="anonymous"
-      />
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/res/pfp - pixel.png" />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script
-      src="https://kit.fontawesome.com/a147d6b708.js"
-      crossorigin="anonymous"
-      ></script>
   </head>
   <body>
-    <main>
-      <section id="about" class="about-area">
-        <div class="container">
-          <div class="intro">
-            <div class="intro_text">
-              <div class="intro_hi">Aron Jake S. Radam</div>
-              <div class="intro_tagline">
-                Software Developer with experience in game development, mobile applications, and software solutions across multiple platforms.
-              </div>
-              <a href="#projects" class="modern-button"
-                >View My Projects <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <section id="background" class="background-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mb-10 text-center mx-auto">
-            <h2 class="projects-area_title">Background</h2>
-            <p>
-              I am a graduate with a Bachelor of Science in Entertainment and Multimedia Computing, specialized in Game Development, from the University of Caloocan City.
-            </p>
-            <br>
-            <p>
-              My expertise spans the full development pipeline — from designing engaging gameplay mechanics to implementing scalable backend systems and developer tools. I specialize in Unity and C#, with additional experience in engines like Godot and frameworks such as Bevy and Flutter. My portfolio includes projects ranging from educational games to custom Unity editor tools, mobile apps, and automation scripts.
-            </p>
-            <br>
-            <p>
-              Beyond game development, I explore mobile, web and software development to broaden my technical reach, leveraging my knowledge in multiple programming languages, databases, and frameworks. I am driven by the challenge of solving complex problems and transforming creative concepts into interactive, polished experiences.
-            </p>
-            <br>
-            <p>
-              I am on lookout for potential work opportunities where I can contribute my skills and passion for game development and software engineering. If you are interested in collaborating, have a project in mind or work opportunities, feel free to reach out!
-            </p>
-            <br>
-          </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">AJ</a>
+        <ul class="nav-links">
+          <li><a href="#background" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button id="burger-menu-toggle" class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </div>
-    </section>
-    <section id="projects" class="projects-area">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-12 text-center">
-            <h2 class="projects-area_title">Projects</h2>
-            <ul
-              class="nav nav-tabs justify-content-center"
-              id="projectsTab"
-              role="tablist"
-              >
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="games-tab"
-                  data-toggle="tab"
-                  href="#games"
-                  role="tab"
-                  >Games</a
-                  >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="tools-tab"
-                  data-toggle="tab"
-                  href="#tools"
-                  role="tab"
-                  >Tools</a
-                  >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  id="mobile-tab"
-                  data-toggle="tab"
-                  href="#mobile"
-                  role="tab"
-                  >Mobile</a
-                  >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="tab-content" id="projectsTabContent">
-          <!-- Games Section -->
-          <div class="tab-pane fade show active" id="games" role="tabpanel">
-            <div class="row">
-              <!-- Trash Frenzy -->
-              <div class="col-md-6 mb-4">
-                <h5>Trash Frenzy</h5>
-                <p>
-                  <em
-                    >Trash Frenzy takes place in five famous water tourist spots
-                  in the Philippines. The player controls Janitor — a robotic
-                  fish that is tasked to eliminate the pollution caused by the
-                  mad robot Atlantis and eliminate it once and for all.</em
-                    >
-                </p>
-                <p><em>Development Timeline: August 2024 - April 2025</em></p>
-                <p>
-                  <em
-                    >Roles: Project Manager, Gameplay Programmer, Game
-                  Designer</em
-                    >
-                </p>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/_yQ9IA0cQ-A?si=Ch1_l1f5hEQT9h0G&amp;controls=1"
-                  title="Trash Frenzy - Trailer"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  ></iframe>
-              </div>
-              <!-- Lifebound -->
-              <div class="col-md-6 mb-4">
-                <h5>Lifebound</h5>
-                <p>
-                  <em
-                    >Can your bond withstand the trials ahead? Embark on a 3D
-                  underground world adventure with Sol and Luna to test your
-                  communication skills. Together, you'll explore the searing
-                  heat of life beneath the surface and bound across
-                  treacherous landscapes to solve puzzles to escape the
-                  misery.</em
-                    >
-                </p>
-                <p><em>Development Timeline: January 2024 - May 2024</em></p>
-                <p><em>Roles: Gameplay Programmer, Multiplayer Engineer</em></p>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/PnV9KYkl3QY?si=leR5JJU-z0XplzeX"
-                  title="Lifebound - Trailer"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  ></iframe>
-              </div>
-              <!-- Night Light -->
-              <div class="col-md-6 mb-4">
-                <h5>Night Light</h5>
-                <p>
-                  <em
-                    >You play the role of Lila as the chosen one to save the
-                  world from the curse of darkness. With your trusty companion
-                  Aria, traverse through five stages and collect scattered
-                  light orbs while avoiding enemies and dangerous hazards.</em
-                    >
-                </p>
-                <p>
-                  <em>Development Timeline: August 2023 - December 2023</em>
-                </p>
-                <p>
-                  <em
-                    >Roles: Project Manager, Gameplay Programmer, Game
-                  Designer</em
-                    >
-                </p>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/2WEyH6xaqGk?si=RkQDZNZfHCOwmoeA"
-                  title="Night Light - Trailer"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  ></iframe>
-              </div>
-              <!-- Orders Please -->
-              <div class="col-md-6 mb-4">
-                <h5>Orders Please</h5>
-                <p>
-                  <em
-                    >You're a street food vendor on campus, where your job is to
-                  satisfy students' cravings for delicious street food, but
-                  against the clock. Time is of the essence, so keep track of
-                  each customers request to ensure their hunger is satisfied
-                  with culinary delight.</em
-                    >
-                </p>
-                <p>
-                  <em>Development Timeline: October 2023 - November 2023</em>
-                </p>
-                <p><em>Roles: Gameplay Programmer</em></p>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/BuCFdMbFZus?si=XfBZMHHBtYtaJPxs"
-                  title="Orders Please - Gameplay"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  ></iframe>
-              </div>
-              <!-- Cyclescape -->
-              <div class="col-md-6 mb-4">
-                <h5>Cyclescape</h5>
-                <p>
-                  <em
-                    >Explore the four phases of menstrual cycle by playing as a
-                  little girl about herself being curious about menstrual
-                  cycle.</em
-                    >
-                </p>
-                <p>
-                  <em>Development Timeline: October 2023 - November 2023</em>
-                </p>
-                <p><em>Roles: Gameplay Programmer, Game Designer</em></p>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/seB4NQnSA40?si=Ov7xwtThfil21-jX"
-                  title="Cyclescape - Gameplay"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  ></iframe>
-              </div>
-            </div>
-          </div>
-          <!-- Unity Tools Section -->
-          <div class="tab-pane fade" id="tools" role="tabpanel">
-            <div class="row">
-              <!-- Chocolatey Bootstrapper -->
-              <div class="col-md-6 mb-4">
-                <h5>Chocolatey Bootstrapper</h5>
-                <p>
-                  <em
-                    >A flexible, general-purpose PowerShell script that automates software installation using Chocolatey.</em
-                    >
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/ChocolateyBootstrapper"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ChocolateyBootstrapper"
-                  alt="Chocolatey Bootstrapper GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-              <!-- Unity Event Toolkit -->
-              <div class="col-md-6 mb-4">
-                <h5>Unity Event Toolkit</h5>
-                <p>
-                  <em
-                    >A comprehensive Unity toolkit that empowers developers to
-                  efficiently manage, analyze, and optimize UnityEvents for
-                  robust project performance.</em
-                    >
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/UnityEventToolkit"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=UnityEventToolkit"
-                  alt="Unity Event Toolkit GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-              <!-- Save Encryption Toolkit -->
-              <div class="col-md-6 mb-4">
-                <h5>Save Encryption Toolkit</h5>
-                <p>
-                  <em
-                    >A flexible, encryption-ready save system toolkit for Unity.
-                  Use your own save manager while leveraging this toolkit's
-                  robust encryption and serialization utilities.</em
-                    >
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/SaveEncryptionToolkit"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=SaveEncryptionToolkit"
-                  alt="Save Encryption Toolkit GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-              <!-- Scriptable Batch Tool -->
-              <div class="col-md-6 mb-4">
-                <h5>Scriptable Batch Tool</h5>
-                <p>
-                  <em
-                    >A Unity Editor Window tool designed to streamline the
-                  creation and management of multiple ScriptableObject
-                  instances.
-                  </em>
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/ScriptableBatchTool"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool"
-                  alt="Scriptable Batch Tool GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-              <!-- Debug Command System -->
-              <div class="col-md-6 mb-4">
-                <h5>Debug Command System</h5>
-                <p>
-                  <em
-                    >A flexible and extendable developer debug console system
-                  for Unity projects, supporting typed commands,
-                  auto-completion, and command suggestions. Fully integrated
-                  with Unity's New Input System.
-                  </em>
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/DebugCommandSystem"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem"
-                  alt="Debug Command System GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Mobile Section -->
-          <div class="tab-pane fade" id="mobile" role="tabpanel">
-            <div class="row">
-              <!-- enotes-->
-                  <div class="col-md-6 mb-4">
-                <h5>eNotes</h5>
-                <p>
-                  <em
-                    >A simple note taking application.</em
-                    >
-                </p>
-                <a
-                  href="https://github.com/haruchanz64/enotes"
-                  target="_blank"
-                  >
-                <img
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=enotes"
-                  alt="enotes GitHub Card"
-                  style="width: 100%"
-                  />
-                </a>
-              </div>
-              </div>
-            </div>
-          </div>
-    </section>
-<section id="skills" class="skills-area">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="projects-area_title">Skill Set</h2>
-    </div>
+    </nav>
 
-    <ul class="nav nav-tabs justify-content-center mb-4" id="skillsTab" role="tablist">
-      <li class="nav-item"><a class="nav-link active" id="languages-tab" data-toggle="tab" href="#languages" role="tab">Languages</a></li>
-      <li class="nav-item"><a class="nav-link" id="frameworks-tab" data-toggle="tab" href="#frameworks" role="tab">Frameworks / Libraries</a></li>
-      <li class="nav-item"><a class="nav-link" id="database-tab" data-toggle="tab" href="#database" role="tab">Database</a></li>
-      <li class="nav-item"><a class="nav-link" id="tools-tab" data-toggle="tab" href="#devtools" role="tab">Tools</a></li>
-      <li class="nav-item"><a class="nav-link" id="engines-tab" data-toggle="tab" href="#engines" role="tab">Game Engines</a></li>
-    </ul>
-
-    <div class="tab-content" id="skillsTabContent">
-      <!-- Programming Languages -->
-      <div class="tab-pane fade show active" id="languages" role="tabpanel">
-    <div class="row text-center">
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" height="50">
-            <p class="mt-2">C#</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" height="50">
-            <p class="mt-2">Java</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" height="50">
-            <p class="mt-2">Python</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" height="50">
-            <p class="mt-2">C</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" height="50">
-            <p class="mt-2">C++</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" height="50">
-            <p class="mt-2">Rust</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" height="50">
-            <p class="mt-2">PHP</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="Dart" height="50">
-            <p class="mt-2">Dart</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" height="50">
-            <p class="mt-2">HTML</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" height="50">
-            <p class="mt-2">CSS</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" height="50">
-            <p class="mt-2">JavaScript</p>
-        </div>
-        <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="Visual Basic" height="50">
-            <p class="mt-2">Visual Basic</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Game Engines -->
-      <div class="tab-pane fade" id="engines" role="tabpanel">
-        <div class="row text-center">
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity" height="50">
-            <p class="mt-2">Unity</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg" alt="Godot" height="50">
-            <p class="mt-2">Godot</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Frameworks / Libraries -->
-      <div class="tab-pane fade" id="frameworks" role="tabpanel">
-        <div class="row text-center">
-          <div class="col-4 col-md-2 mb-4">
-            <!-- Bevy -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bevyengine/bevyengine-original.svg" alt="Bevy" height="50">
-            <p class="mt-2">Bevy</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <!-- SDL -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sdl/sdl-original.svg" alt="SDL" height="50">
-            <p class="mt-2">SDL</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" height="50">
-            <p class="mt-2">Flutter</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" height="50">
-            <p class="mt-2">Bootstrap</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt=".NET" height="50"/>
-            <p class="mt-2">.NET</p>
-          </div>
-        </div>
-      </div>
-
-      <!--Database-->
-      <div class="tab-pane fade" id="database" role="tabpanel">
-        <div class="row text-center">
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" height="50">
-            <p class="mt-2">MySQL</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" height="50">
-            <p class="mt-2">SQLite</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase" height="50">
-            <p class="mt-2">Firebase</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" height="50">
-            <p class="mt-2">Supabase</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tools -->
-      <div class="tab-pane fade" id="devtools" role="tabpanel">
-        <div class="row text-center">
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" height="50">
-            <p class="mt-2">Git</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" alt="Gitlab" height="50">
-            <p class="mt-2">Gitlab</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github" height="50">
-            <p class="mt-2">Github</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" height="50">
-            <p class="mt-2">Android Studio</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA" height="50">
-            <p class="mt-2">IntelliJ</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <!-- JetBrains Rider Logo -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rider/rider-original.svg" alt="Rider" height="50">
-            <p class="mt-2">Rider</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <!-- Clang -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/clion/clion-original.svg" alt="CLion" height="50">
-            <p class="mt-2">CLion</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" alt="PyCharm" height="50">
-            <p class="mt-2">PyCharm</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="Visual Studio Code" height="50">
-            <p class="mt-2">Visual Studio Code</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" alt="Notion" height="50">
-            <p class="mt-2">Notion</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" height="50">
-            <p class="mt-2">Figma</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio" height="50">
-            <p class="mt-2">Visual Studio</p>
-          </div>
-          <div class="col-4 col-md-2 mb-4">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-original.svg" alt="Trello" height="50">
-            <p class="mt-2">Trello</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <footer id="contact" class="contact-area py-5 text-light">
-  <div class="container">
-    <div class="row text-center">
-      <!-- Name & Email -->
-      <div class="col-md-6 mb-4">
-        <h3>Let's Connect</h3>
-        <p>Interested in working together or have a question?</p>
-        <a href="mailto:radam.aronjake@gmail.com" class="btn btn-outline-light mt-2">
-          <i class="fa-solid fa-envelope mr-2"></i> radam.aronjake@gmail.com
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-name">Aron Jake Radam</h1>
+        <h2 class="hero-title">Software Developer</h2>
+        <p class="hero-description">
+          Specialized in mobile and game development. Passionate about
+          transforming creative concepts into interactive, polished experiences.
+        </p>
+        <a href="#projects" class="cta-button">
+          View My Work <i class="fas fa-arrow-right"></i>
         </a>
       </div>
+    </section>
 
-      <!-- Social Links -->
-      <div class="col-md-6 mb-4">
-        <h4>Find Me Online</h4>
-        <div class="d-flex justify-content-center mt-3 flex-wrap">
-          <a href="https://www.linkedin.com/in/radamaj/" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="LinkedIn">
-            <i class="fa-brands fa-linkedin fa-lg"></i>
+    <section id="background" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="background-text">
+        <p>
+          I am a graduate with a Bachelor of Science in Entertainment and
+          Multimedia Computing, specialized in Game Development, from the
+          University of Caloocan City.
+        </p>
+        <p>
+          My expertise spans the full development pipeline, from designing
+          engaging gameplay mechanics to implementing scalable backend systems
+          and developer tools. I specialize in Unity and C#, with additional
+          experience in engines like Godot. My portfolio includes projects
+          ranging from educational games to custom Unity editor tools, mobile
+          apps, and automation scripts.
+        </p>
+        <p>
+          Beyond game development, I explore mobile development to broaden my
+          technical reach, leveraging my knowledge in multiple programming
+          languages, databases, and frameworks. I am driven by the challenge of
+          solving complex problems and transforming creative concepts into
+          interactive, polished experiences.
+        </p>
+        <p>
+          I am on the lookout for potential work opportunities where I can
+          contribute my skills and passion for mobile and game development. If
+          you are interested in collaborating, have a project in mind or work
+          opportunities, feel free to reach out!
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="tabs">
+        <button class="tab-button active" data-tab="games">Games</button>
+        <button class="tab-button" data-tab="tools">Tools</button>
+        <button class="tab-button" data-tab="mobile">Mobile</button>
+      </div>
+
+      <div id="games" class="tab-content active">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-video">
+              <iframe
+                src="https://www.youtube.com/embed/_yQ9IA0cQ-A?si=Ch1_l1f5hEQT9h0G&controls=1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Trash Frenzy</h3>
+              <p class="project-description">
+                Trash Frenzy takes place in five famous water tourist spots in
+                the Philippines. The player controls Janitor — a robotic fish
+                that is tasked to eliminate the pollution caused by the mad
+                robot Atlantis and eliminate it once and for all.
+              </p>
+              <div class="project-meta">
+                Development Timeline: August 2024 - April 2025
+              </div>
+              <div class="project-meta">
+                Roles: Project Manager, Gameplay Programmer, Game Designer
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-video">
+              <iframe
+                src="https://www.youtube.com/embed/PnV9KYkl3QY?si=leR5JJU-z0XplzeX"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Lifebound</h3>
+              <p class="project-description">
+                Can your bond withstand the trials ahead? Embark on a 3D
+                underground world adventure with Sol and Luna to test your
+                communication skills. Together, you'll explore the searing heat
+                of life beneath the surface and bound across treacherous
+                landscapes to solve puzzles to escape the misery.
+              </p>
+              <div class="project-meta">
+                Development Timeline: January 2024 - May 2024
+              </div>
+              <div class="project-meta">
+                Roles: Gameplay Programmer, Multiplayer Engineer
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-video">
+              <iframe
+                src="https://www.youtube.com/embed/2WEyH6xaqGk?si=RkQDZNZfHCOwmoeA"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Night Light</h3>
+              <p class="project-description">
+                You play the role of Lila as the chosen one to save the world
+                from the curse of darkness. With your trusty companion Aria,
+                traverse through five stages and collect scattered light orbs
+                while avoiding enemies and dangerous hazards.
+              </p>
+              <div class="project-meta">
+                Development Timeline: August 2023 - December 2023
+              </div>
+              <div class="project-meta">
+                Roles: Project Manager, Gameplay Programmer, Game Designer
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-video">
+              <iframe
+                src="https://www.youtube.com/embed/BuCFdMbFZus?si=XfBZMHHBtYtaJPxs"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Orders Please</h3>
+              <p class="project-description">
+                You're a street food vendor on campus, where your job is to
+                satisfy students' cravings for delicious street food, but
+                against the clock. Time is of the essence, so keep track of each
+                customers request to ensure their hunger is satisfied with
+                culinary delight.
+              </p>
+              <div class="project-meta">
+                Development Timeline: October 2023 - November 2023
+              </div>
+              <div class="project-meta">Roles: Gameplay Programmer</div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-video">
+              <iframe
+                src="https://www.youtube.com/embed/seB4NQnSA40?si=Ov7xwtThfil21-jX"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Cyclescape</h3>
+              <p class="project-description">
+                Explore the four phases of menstrual cycle by playing as a
+                little girl about herself being curious about menstrual cycle.
+              </p>
+              <div class="project-meta">
+                Development Timeline: October 2023 - November 2023
+              </div>
+              <div class="project-meta">
+                Roles: Gameplay Programmer, Game Designer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tools" class="tab-content">
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h3 class="project-title">Chocolatey Bootstrapper</h3>
+            <p class="project-description">
+              A flexible, general-purpose PowerShell script that automates
+              software installation using Chocolatey.
+            </p>
+            <a
+              href="https://github.com/haruchanz64/ChocolateyBootstrapper"
+              target="_blank"
+            >
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ChocolateyBootstrapper&theme=dark"
+                class="github-card"
+                alt="Chocolatey Bootstrapper"
+              />
+            </a>
+          </div>
+
+          <div class="tool-card">
+            <h3 class="project-title">Unity Event Toolkit</h3>
+            <p class="project-description">
+              A comprehensive Unity toolkit that empowers developers to
+              efficiently manage, analyze, and optimize UnityEvents for robust
+              project performance.
+            </p>
+            <a
+              href="https://github.com/haruchanz64/UnityEventToolkit"
+              target="_blank"
+            >
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=UnityEventToolkit&theme=dark"
+                class="github-card"
+                alt="Unity Event Toolkit"
+              />
+            </a>
+          </div>
+
+          <div class="tool-card">
+            <h3 class="project-title">Save Encryption Toolkit</h3>
+            <p class="project-description">
+              A flexible, encryption-ready save system toolkit for Unity. Use
+              your own save manager while leveraging this toolkit's robust
+              encryption and serialization utilities.
+            </p>
+            <a
+              href="https://github.com/haruchanz64/SaveEncryptionToolkit"
+              target="_blank"
+            >
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=SaveEncryptionToolkit&theme=dark"
+                class="github-card"
+                alt="Save Encryption Toolkit"
+              />
+            </a>
+          </div>
+
+          <div class="tool-card">
+            <h3 class="project-title">Scriptable Batch Tool</h3>
+            <p class="project-description">
+              A Unity Editor Window tool designed to streamline the creation and
+              management of multiple ScriptableObject instances.
+            </p>
+            <a
+              href="https://github.com/haruchanz64/ScriptableBatchTool"
+              target="_blank"
+            >
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=ScriptableBatchTool&theme=dark"
+                class="github-card"
+                alt="Scriptable Batch Tool"
+              />
+            </a>
+          </div>
+
+          <div class="tool-card">
+            <h3 class="project-title">Debug Command System</h3>
+            <p class="project-description">
+              A flexible and extendable developer debug console system for Unity
+              projects, supporting typed commands, auto-completion, and command
+              suggestions. Fully integrated with Unity's New Input System.
+            </p>
+            <a
+              href="https://github.com/haruchanz64/DebugCommandSystem"
+              target="_blank"
+            >
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=DebugCommandSystem&theme=dark"
+                class="github-card"
+                alt="Debug Command System"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile" class="tab-content">
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h3 class="project-title">eNotes</h3>
+            <p class="project-description">A simple note taking application.</p>
+            <a href="https://github.com/haruchanz64/enotes" target="_blank">
+              <img
+                src="https://github-readme-stats.vercel.app/api/pin/?username=haruchanz64&repo=enotes&theme=dark"
+                class="github-card"
+                alt="eNotes"
+              />
+            </a>
+          </div>
+          <div class="tool-card">
+            <h3 class="project-title">
+              Budget Buddy
+              <span style="color: #ff9800; font-size: 0.8em"
+                >(In Development)</span
+              >
+            </h3>
+            <p class="project-description">
+              A personal finance app to help you manage your expenses and
+              savings.
+            </p>
+            <a href="" target="_blank">
+              <img src="" class="github-card" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-skill="languages">
+          Languages
+        </button>
+        <button class="skill-tab" data-skill="frameworks">Frameworks</button>
+        <button class="skill-tab" data-skill="database">Database</button>
+        <button class="skill-tab" data-skill="devtools">Tools</button>
+        <button class="skill-tab" data-skill="engines">Game Engines</button>
+      </div>
+
+      <div id="languages" class="tab-content active">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              alt="C++"
+            />
+            <span class="skill-name">C++</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+              alt="C#"
+            />
+            <span class="skill-name">C#</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"
+              alt="Dart"
+            />
+            <span class="skill-name">Dart</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              alt="Java"
+            />
+            <span class="skill-name">Java</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="frameworks" class="tab-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
+              alt=".NET"
+            />
+            <span class="skill-name">.NET</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
+              alt="Flutter"
+            />
+            <span class="skill-name">Flutter</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sdl/sdl-original.svg"
+              alt="SDL"
+            />
+            <span class="skill-name">SDL</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="database" class="tab-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+              alt="Firebase"
+            />
+            <span class="skill-name">Firebase</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+              alt="MySQL"
+            />
+            <span class="skill-name">MySQL</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+              alt="Supabase"
+            />
+            <span class="skill-name">Supabase</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="devtools" class="tab-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg"
+              alt="Android Studio"
+            />
+            <span class="skill-name">Android Studio</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/clion/clion-original.svg"
+              alt="CLion"
+            />
+            <span class="skill-name">CLion</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+              alt="Figma"
+            />
+            <span class="skill-name">Figma</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              alt="GitHub"
+            />
+            <span class="skill-name">GitHub</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+              alt="IntelliJ"
+            />
+            <span class="skill-name">IntelliJ</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
+              alt="Notion"
+            />
+            <span class="skill-name">Notion</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rider/rider-original.svg"
+              alt="Rider"
+            />
+            <span class="skill-name">Rider</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg"
+              alt="Trello"
+            />
+            <span class="skill-name">Trello</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+            />
+            <span class="skill-name">Visual Studio Code</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+              alt="Visual Studio"
+            />
+            <span class="skill-name">Visual Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="engines" class="tab-content">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
+              alt="Godot"
+            />
+            <span class="skill-name">Godot</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+              alt="Unity"
+            />
+            <span class="skill-name">Unity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-content">
+        <h2 class="contact-title">Let's Connect</h2>
+        <p class="contact-description">
+          Interested in working together or have a question? I'd love to hear
+          from you.
+        </p>
+        <a href="mailto:radam.aronjake@gmail.com" class="contact-email">
+          <i class="fas fa-envelope"></i>
+          radam.aronjake@gmail.com
+        </a>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/radamaj/"
+            target="_blank"
+            class="social-link"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/haruchanz64" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="GitHub">
-            <i class="fa-brands fa-github fa-lg"></i>
+          <a
+            href="https://github.com/haruchanz64"
+            target="_blank"
+            class="social-link"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
           </a>
-          <a href="https://haruchanz64.itch.io" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="Itch.io">
-            <i class="fa-brands fa-itch-io fa-lg"></i>
+          <a
+            href="https://haruchanz64.itch.io"
+            target="_blank"
+            class="social-link"
+            title="Itch.io"
+          >
+            <i class="fab fa-itch-io"></i>
           </a>
-          <a href="https://www.facebook.com/RadamAronJakeS" target="_blank" class="btn btn-outline-light mx-2 mb-2" title="Facebook">
-            <i class="fa-brands fa-facebook fa-lg"></i>
+          <a
+            href="https://www.facebook.com/RadamAronJakeS"
+            target="_blank"
+            class="social-link"
+            title="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Copyright -->
-    <div class="row mt-4">
-      <div class="col-12 text-center">
-        <small>&copy; 2025 Aron Jake S. Radam. All rights reserved.</small>
-      </div>
-    </div>
-  </div>
-</footer>
+    <footer class="footer">
+      <p>&copy; 2025 Aron Jake S. Radam. All rights reserved.</p>
+    </footer>
 
-    <!-- Required for Bootstrap navbar toggle to work -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      crossorigin="anonymous"
-      ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-      ></script>
-    <!-- Active section nav highlighting -->
-    <script src="js/smooth-scroll .js"></script>
-    <script src="js/url-hash-manager.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>
