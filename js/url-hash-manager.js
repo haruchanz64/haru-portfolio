@@ -1,26 +1,21 @@
-document
-  .querySelector('a[href="#projects"]')
-  .addEventListener("click", function (event) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  if (anchor.getAttribute("href") === "#") return;
+
+  anchor.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent default anchor behavior
 
-    // Smooth scroll to the #projects section
-    document.getElementById("projects").scrollIntoView({
-      behavior: "smooth",
-    });
+    const targetId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
 
-    // After the scroll, update the URL without the hash
-    // We use setTimeout to allow the scroll animation to start before the URL changes
-    setTimeout(() => {
-      const urlWithoutHash = window.location.href.split("#")[0];
-      window.history.pushState(null, "", urlWithoutHash);
-    }, 500); // Adjust this delay if needed, depending on your scroll speed
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+      });
+
+      setTimeout(() => {
+        const urlWithoutHash = window.location.href.split("#")[0];
+        window.history.pushState(null, "", urlWithoutHash);
+      }, 500); // Adjust this delay if needed
+    }
   });
-
-// Optional: If you want to remove the hash if the page is loaded directly with #projects
-// This will run when the page first loads
-window.addEventListener("DOMContentLoaded", (event) => {
-  if (window.location.hash === "#projects") {
-    const urlWithoutHash = window.location.href.split("#")[0];
-    window.history.replaceState(null, "", urlWithoutHash);
-  }
 });
