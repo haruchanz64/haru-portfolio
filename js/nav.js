@@ -6,6 +6,6 @@ if (burgerMenuToggle && navLinks) {
     navLinks.classList.toggle("active");
     burgerMenuToggle.innerHTML = navLinks.classList.contains("active")
       ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-bars"></i>';
+      : '<i class="fas fa-ellipsis-vertical"></i>';
   });
 }
