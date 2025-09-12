@@ -1,5 +1,4 @@
 :root {
-  /* Warm-Toned Dark Theme */
   --bg-primary: #1e1e1e;
   --bg-secondary: #282828;
   --bg-tertiary: #333333;
@@ -16,22 +15,16 @@
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* Light Theme Variables */
 .light-theme {
-  --bg-primary: #f5f5f5;
+  --bg-primary: #f8f7f5;
   --bg-secondary: #ffffff;
-  --bg-tertiary: #eaeaea;
-  --text-primary: #1e1e1e;
-  --text-secondary: #444444;
-  --text-muted: #8f8f8f;
-  --accent-primary: #ff6600;
-  --accent-secondary: #ffb300;
-  --border-color: #d1d1d1;
-  --gradient-primary: linear-gradient(135deg, #ff8a65 0%, #ffd54f 100%);
-  --gradient-secondary: linear-gradient(135deg, #f9d423 0%, #f89006 100%);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --bg-tertiary: #ebe9e5;
+  --text-primary: #3e3734;
+  --text-secondary: #6b6460;
+  --text-muted: #9c9591;
+  --accent-primary: #d46c2b;
+  --accent-secondary: #e8a554;
+  --border-color: #e0dcd9;
 }
 
 /* Reset */
