@@ -1,35 +1,34 @@
 :root {
-  /* Dark Theme (Default) */
-  --bg-primary: #121212;       /* Deep Charcoal Black */
-  --bg-secondary: #1e1e1e;     /* Slightly lighter surface */
-  --bg-tertiary: #2a2a2a;      /* Elevated surface */
+  /* Dark Theme (Default) - "Midnight Rose" */
+  --bg-primary: #1a1517;       /* Deep Black with a Pink tint */
+  --bg-secondary: #251d20;     /* Dark Chocolate-Pink */
+  --bg-tertiary: #35292d;      /* Elevated Soft Plum */
 
-  --text-primary: #ffffff;     /* Pure White */
-  --text-secondary: #a0a0a0;   /* Medium Gray */
-  --text-muted: #666666;       /* Dark Gray */
+  --text-primary: #ffeef3;     /* Off-white with Pink glow */
+  --text-secondary: #d4b8c1;   /* Muted Rose-Gray */
+  --text-muted: #8a737a;       /* Darker Rose-Gray */
 
-  --accent-primary: #87ceeb;   /* Sky Blue */
-  --accent-secondary: #00b4ff; /* Vibrant Sky Blue */
+  --accent-primary: #ffa5c3;   /* Your Specific Pink */
+  --accent-secondary: #ff8cb1; /* Vibrant Pink */
 
-  --border-color: #333333;
-  --shadow-sm: none;
-  --shadow-md: none;
-  --shadow-lg: none;
+  --border-color: #45343a;
+  --shadow-sm: 0 2px 4px rgba(255, 165, 195, 0.1);
 }
 
 .light-theme {
-  --bg-primary: #ffffff;       /* Pure White */
-  --bg-secondary: #f8f9fa;     /* Off-white/Ice */
-  --bg-tertiary: #f0f4f8;      /* Very Light Blue-Gray */
+  /* Light Theme - "Soft Blossom" */
+  --bg-primary: #fffafa;       /* Snow with a touch of Pink */
+  --bg-secondary: #ffeff4;     /* Very Pale Pink surface */
+  --bg-tertiary: #ffe4ed;      /* Soft Blush surface */
 
-  --text-primary: #1a1a1a;     /* Near Black */
-  --text-secondary: #4a4a4a;   /* Dark Gray */
-  --text-muted: #8e8e8e;       /* Muted Gray */
+  --text-primary: #3d2b31;     /* Deep Espresso-Pink (better than pure black) */
+  --text-secondary: #6e4f59;   /* Muted Plum */
+  --text-muted: #9e7e88;       /* Dusty Rose */
 
-  --accent-primary: #87ceeb;   /* Sky Blue */
-  --accent-secondary: #5fbce2; /* Deeper Sky Blue for hover states */
+  --accent-primary: #ffa5c3;   /* Your Specific Pink */
+  --accent-secondary: #f286a8; /* Deeper Pink for contrast */
 
-  --border-color: #e0e0e0;
+  --border-color: #f7d3df;
 }
 
 /* Reset */
