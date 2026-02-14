@@ -1,37 +1,27 @@
 :root {
-  /* Dark Theme (Default) - "Midnight Rose" */
-  --bg-primary: #1a1517;       /* Deep Black with a Pink tint */
-  --bg-secondary: #251d20;     /* Dark Chocolate-Pink */
-  --bg-tertiary: #35292d;      /* Elevated Soft Plum */
-
-  --text-primary: #ffeef3;     /* Off-white with Pink glow */
-  --text-secondary: #d4b8c1;   /* Muted Rose-Gray */
-  --text-muted: #8a737a;       /* Darker Rose-Gray */
-
-  --accent-primary: #ffa5c3;   /* Your Specific Pink */
-  --accent-secondary: #ff8cb1; /* Vibrant Pink */
-
-  --border-color: #45343a;
-  --shadow-sm: 0 2px 4px rgba(255, 165, 195, 0.1);
+  --bg-primary: #000000; 
+  --bg-secondary: #121212;
+  --bg-tertiary: #1e1e1e;
+  --text-primary: #ffffff; 
+  --text-secondary: #b2b2b2;
+  --text-muted: #949494;
+  --accent-primary: #fb3b64; 
+  --accent-secondary: #ff5c7d;
+  --border-color: #333333;
 }
 
 .light-theme {
-  /* Light Theme - "Soft Blossom" */
-  --bg-primary: #fffafa;       /* Snow with a touch of Pink */
-  --bg-secondary: #ffeff4;     /* Very Pale Pink surface */
-  --bg-tertiary: #ffe4ed;      /* Soft Blush surface */
-
-  --text-primary: #3d2b31;     /* Deep Espresso-Pink (better than pure black) */
-  --text-secondary: #6e4f59;   /* Muted Plum */
-  --text-muted: #9e7e88;       /* Dusty Rose */
-
-  --accent-primary: #ffa5c3;   /* Your Specific Pink */
-  --accent-secondary: #f286a8; /* Deeper Pink for contrast */
-
-  --border-color: #f7d3df;
+  --bg-primary: #ffffff;   
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f1f3f5;
+  --text-primary: #000000;  
+  --text-secondary: #595959;
+  --text-muted: #757575;
+  --accent-primary: #d81b45;
+  --accent-secondary: #fb3b64;
+  --border-color: #d1d1d1;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -52,23 +42,20 @@ body {
   transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* ==================== */
-/* === Navigation === */
-/* ==================== */
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem;
-  background: #0a0a0a;
+  background: var(--bg-primary);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
   transition: all 0.3s ease;
 }
 
 .light-theme .nav {
-  background: #ffffff;
+  background: var(--bg-primary);
 }
 
 .nav-container {
@@ -109,10 +96,7 @@ body {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
-  box-shadow: var(--shadow-md);
 }
-
-
 
 .nav-links a {
   color: var(--text-secondary);
@@ -161,8 +145,6 @@ body {
 .burger-menu {
   display: block;
 }
-
-
 
 .nav-actions {
   display: flex;
@@ -224,11 +206,6 @@ body {
   }
 }
 
-
-
-/* ==================== */
-/* === Hero Section === */
-/* ==================== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -293,22 +270,18 @@ body {
   gap: 0.5rem;
   padding: 1rem 2rem;
   background: var(--accent-primary);
-  color: white;
+  color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: var(--shadow-md);
   animation-delay: 1s;
 }
 
 .cta-button:hover {
   background: var(--accent-secondary);
-  color: white;
+  color: var(--bg-primary);
 }
 
-/* ==================== */
-/* === Sections === */
-/* ==================== */
 .section {
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -321,6 +294,7 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
+  color: var(--text-primary);
 }
 
 .section-title::after {
@@ -349,7 +323,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Projects Section */
 .tabs {
   display: flex;
   justify-content: center;
@@ -410,11 +383,8 @@ body {
 .project-card {
   background: var(--bg-secondary);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
 }
-
-.project-card:hover {}
 
 .project-video {
   position: relative;
@@ -451,22 +421,17 @@ body {
   margin-bottom: 0.5rem;
 }
 
-
-
 .tool-card {
   background: var(--bg-secondary);
   padding: 2rem;
   transition: all 0.3s ease;
 }
 
-.tool-card:hover {}
-
 .github-card {
   width: 100%;
   max-width: 100%;
 }
 
-/* Skills Section */
 .skills-tabs {
   display: flex;
   justify-content: center;
@@ -488,7 +453,7 @@ body {
 
 .skill-tab.active {
   background: var(--accent-primary);
-  color: white;
+  color: var(--bg-primary);
   border-bottom: 2px solid var(--accent-primary);
 }
 
@@ -506,8 +471,6 @@ body {
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
-
-.skill-item:hover {}
 
 .skill-item img {
   width: 48px;
@@ -534,7 +497,6 @@ body {
   margin-top: 0.5rem;
 }
 
-/* Contact Section */
 .contact {
   background: var(--bg-secondary);
   text-align: center;
@@ -548,6 +510,7 @@ body {
 .contact-title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--text-primary);
 }
 
 .contact-description {
@@ -562,14 +525,17 @@ body {
   gap: 0.5rem;
   padding: 1rem 2rem;
   background: var(--accent-secondary);
-  color: white;
+  color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
 }
 
-.contact-email:hover {}
+.contact-email:hover {
+  background: var(--accent-primary);
+  transform: translateY(-2px);
+}
 
 .social-links {
   display: flex;
@@ -592,9 +558,13 @@ body {
   border: 1px solid var(--border-color);
 }
 
-.social-link:hover {}
+.social-link:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
 
-/* Footer */
 .footer {
   padding: 2rem;
   text-align: center;
@@ -603,7 +573,116 @@ body {
   font-size: 0.9rem;
 }
 
-/* Animations */
+/* Video Preview Styles */
+.video-preview {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: #000;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Video Preview Styles */
+.video-preview {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: #000;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.video-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.video-preview:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.video-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: var(--accent-primary);
+  font-size: 48px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: var(--accent-primary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button i {
+  color: var(--bg-primary);
+  font-size: 32px;
+  margin-left: 4px;
+}
+
+.play-button:hover {
+  background-color: var(--accent-secondary);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button:active {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.project-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.project-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -623,5 +702,3 @@ body {
     opacity: 1;
   }
 }
-
-

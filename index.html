@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,8 @@
     <title>Haru</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -48,9 +50,7 @@
       <div class="hero-content">
         <div class="hero-greeting">Hello, I'm</div>
         <h1 class="hero-name">Aron Jake Radam</h1>
-        <p class="hero-description">
-          Backend Mobile / Game Programmer Freelancer
-        </p>
+
         <a href="#projects" class="cta-button">
           View My Work <i class="fas fa-arrow-right"></i>
         </a>
@@ -102,10 +102,15 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-video">
-              <iframe
-                src="https://www.youtube.com/embed/_yQ9IA0cQ-A?si=Ch1_l1f5hEQT9h0G&controls=1"
-                allowfullscreen
-              ></iframe>
+              <div class="video-preview" data-video-id="_yQ9IA0cQ-A">
+                <img
+                  src="https://img.youtube.com/vi/_yQ9IA0cQ-A/maxresdefault.jpg"
+                  alt="Trash Frenzy video thumbnail"
+                />
+                <button class="play-button" aria-label="Play video">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Trash Frenzy</h3>
@@ -126,10 +131,15 @@
 
           <div class="project-card">
             <div class="project-video">
-              <iframe
-                src="https://www.youtube.com/embed/PnV9KYkl3QY?si=leR5JJU-z0XplzeX"
-                allowfullscreen
-              ></iframe>
+              <div class="video-preview" data-video-id="PnV9KYkl3QY">
+                <img
+                  src="https://img.youtube.com/vi/PnV9KYkl3QY/maxresdefault.jpg"
+                  alt="Lifebound video thumbnail"
+                />
+                <button class="play-button" aria-label="Play video">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Lifebound</h3>
@@ -151,10 +161,15 @@
 
           <div class="project-card">
             <div class="project-video">
-              <iframe
-                src="https://www.youtube.com/embed/2WEyH6xaqGk?si=RkQDZNZfHCOwmoeA"
-                allowfullscreen
-              ></iframe>
+              <div class="video-preview" data-video-id="2WEyH6xaqGk">
+                <img
+                  src="https://img.youtube.com/vi/2WEyH6xaqGk/maxresdefault.jpg"
+                  alt="Night Light video thumbnail"
+                />
+                <button class="play-button" aria-label="Play video">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Night Light</h3>
@@ -175,10 +190,15 @@
 
           <div class="project-card">
             <div class="project-video">
-              <iframe
-                src="https://www.youtube.com/embed/BuCFdMbFZus?si=XfBZMHHBtYtaJPxs"
-                allowfullscreen
-              ></iframe>
+              <div class="video-preview" data-video-id="BuCFdMbFZus">
+                <img
+                  src="https://img.youtube.com/vi/BuCFdMbFZus/maxresdefault.jpg"
+                  alt="Orders Please video thumbnail"
+                />
+                <button class="play-button" aria-label="Play video">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Orders Please</h3>
@@ -198,10 +218,15 @@
 
           <div class="project-card">
             <div class="project-video">
-              <iframe
-                src="https://www.youtube.com/embed/seB4NQnSA40?si=Ov7xwtThfil21-jX"
-                allowfullscreen
-              ></iframe>
+              <div class="video-preview" data-video-id="seB4NQnSA40">
+                <img
+                  src="https://img.youtube.com/vi/seB4NQnSA40/maxresdefault.jpg"
+                  alt="Cyclescape video thumbnail"
+                />
+                <button class="play-button" aria-label="Play video">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Cyclescape</h3>
@@ -332,7 +357,9 @@
           </div>
           <div class="tool-card">
             <h3 class="project-title">PicStar</h3>
-            <p class="project-description">A freelance social media mobile application.</p>
+            <p class="project-description">
+              A freelance social media mobile application.
+            </p>
           </div>
         </div>
       </div>
@@ -381,8 +408,6 @@
             />
             <span class="skill-name">Java</span>
           </div>
-          
-          
         </div>
       </div>
 
@@ -402,7 +427,6 @@
             />
             <span class="skill-name">Flutter</span>
           </div>
-          
         </div>
       </div>
 
@@ -563,15 +587,15 @@
             <i class="fab fa-github"></i>
           </a>
           <a
-            href="https://haruchanz64.itch.io"
+            href="https://discord.com/users/1450100286374019133"
             target="_blank"
             class="social-link"
-            title="Itch.io"
+            title="Discord"
           >
-            <i class="fab fa-itch-io"></i>
+            <i class="fab fa-discord"></i>
           </a>
           <a
-            href="https://www.facebook.com/RadamAronJakeS"
+            href="https://www.facebook.com/aj.prsnl"
             target="_blank"
             class="social-link"
             title="Facebook"
@@ -586,11 +610,15 @@
       <p>&copy; 2025 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/theme.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/video-loader.js"></script>
   </body>
 </html>
