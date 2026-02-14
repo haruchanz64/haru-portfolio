@@ -421,16 +421,84 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.tool-card {
+.github-repo-card {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-secondary);
-  padding: 2rem;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  text-decoration: none;
   transition: all 0.3s ease;
+  min-height: 200px;
+  border-radius: 8px;
 }
 
-.github-card {
-  width: 100%;
-  max-width: 100%;
+.github-repo-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(251, 59, 100, 0.15);
 }
+
+.github-repo-card.no-link {
+  cursor: default;
+}
+
+.github-repo-card.no-link:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--border-color);
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.repo-header i {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.repo-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.repo-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.repo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: auto;
+}
+
+.repo-language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.repo-link {
+  color: var(--accent-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.github-repo-card:hover .repo-link {
+  opacity: 1;
+}
+
 
 .skills-tabs {
   display: flex;
