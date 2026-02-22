@@ -23,10 +23,19 @@ navLinkItems.forEach((link) => {
 
 function highlightNavOnScroll() {
   const scrollY = window.pageYOffset;
+  const pageBottom = document.documentElement.scrollHeight - window.innerHeight;
+
+  // If at the bottom of the page, highlight the last nav link
+  if (scrollY >= pageBottom - 5) {
+    navLinkItems.forEach((link) => link.classList.remove("active"));
+    const lastLink = navLinkItems[navLinkItems.length - 1];
+    if (lastLink) lastLink.classList.add("active");
+    return;
+  }
 
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight;
-    const sectionTop = section.offsetTop - 100; // Offset for fixed navbar
+    const sectionTop = section.offsetTop - 100;
     const sectionId = section.getAttribute("id");
     const correspondingLink = document.querySelector(
       `.nav-link[href="#${sectionId}"]`
@@ -42,5 +51,4 @@ function highlightNavOnScroll() {
 }
 
 window.addEventListener("scroll", highlightNavOnScroll);
-
 highlightNavOnScroll();
