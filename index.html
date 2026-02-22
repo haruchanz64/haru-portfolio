@@ -28,9 +28,7 @@
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <a href="#hero" class="nav-logo"
-          ><img src="/res/icon.png" alt="Haru Logo"
-        /></a>
+        <a href="#hero" class="nav-logo">Haru</a>
         <ul class="nav-links">
           <li><a href="#background" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -69,11 +67,11 @@
           <strong>Java (Spring Boot)</strong>.
         </p>
         <p>
-          I specialize in building the "heavy-duty" infrastructure—from custom
-          engine tooling in <strong>Bevy</strong> to scalable server-side logic.
-          My philosophy is rooted in clean, efficient code, and I am currently
-          expanding my systems-level expertise into <strong>Rust</strong> and
-          low-level frameworks like <strong>SFML</strong>.
+          I specialize in building the "heavy-duty" infrastructure—custom engine
+          tooling, workflow automation, and scalable server-side logic. My
+          philosophy is rooted in clean, efficient code, and I am currently
+          exploring lower-level game development through <strong>Bevy</strong>
+          and <strong>Raylib</strong>.
         </p>
         <p>
           I am available for freelance work involving backend API development,
@@ -85,100 +83,204 @@
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
 
-      <div class="tabs">
-        <button class="tab-button active" data-tab="tools">
-          Systems & Tools
-        </button>
-        <button class="tab-button" data-tab="games">Games</button>
-      </div>
-
-      <div id="tools" class="tab-content active">
-        <div class="tools-grid">
+      <!-- Systems & Tools Category -->
+      <div class="project-category">
+        <div class="category-header">
+          <span class="category-label">
+            <i class="fas fa-wrench"></i> Systems &amp; Tools
+          </span>
+          <div class="category-divider"></div>
+        </div>
+        <div class="projects-grid">
           <a
             href="https://github.com/haruchanz64/UnityEventToolkit"
             target="_blank"
-            class="github-repo-card"
+            class="project-card uniform"
           >
-            <div class="repo-header">
-              <i class="fab fa-github"></i>
-              <span class="repo-name">UnityEventToolkit</span>
+            <div class="project-info">
+              <h3 class="project-title">UnityEventToolkit</h3>
+              <p class="project-description">
+                Manage and analyze UnityEvents. Provides an intuitive interface
+                to scan, filter, and clean up event listeners efficiently.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">C#</span>
+                <span class="role-tag">Unity</span>
+              </div>
             </div>
-            <p class="repo-description">
-              Manage and analyze UnityEvents. Provides an intuitive interface to
-              scan, filter, and clean up event listeners efficiently.
-            </p>
-            <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
-
           <a
             href="https://github.com/haruchanz64/DebugCommandSystem"
             target="_blank"
-            class="github-repo-card"
+            class="project-card uniform"
           >
-            <div class="repo-header">
-              <i class="fab fa-github"></i>
-              <span class="repo-name">DebugCommandSystem</span>
+            <div class="project-info">
+              <h3 class="project-title">DebugCommandSystem</h3>
+              <p class="project-description">
+                Typed developer console for Unity systems with auto-completion.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">C#</span>
+                <span class="role-tag">Unity</span>
+              </div>
             </div>
-            <p class="repo-description">
-              Typed developer console for Unity/Godot systems with
-              auto-completion.
-            </p>
-            <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
-
           <a
             href="https://github.com/haruchanz64/ScriptableBatchTool"
             target="_blank"
-            class="github-repo-card"
+            class="project-card uniform"
           >
-            <div class="repo-header">
-              <i class="fab fa-github"></i>
-              <span class="repo-name">ScriptableBatchTool</span>
+            <div class="project-info">
+              <h3 class="project-title">ScriptableBatchTool</h3>
+              <p class="project-description">
+                Workflow automation for ScriptableObject management and data
+                pipelines.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">C#</span>
+                <span class="role-tag">Unity</span>
+              </div>
             </div>
-            <p class="repo-description">
-              Workflow automation for ScriptableObject management and data
-              pipelines.
-            </p>
-            <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
-
           <a
             href="https://github.com/haruchanz64/SaveEncryptionToolkit"
             target="_blank"
-            class="github-repo-card"
+            class="project-card uniform"
           >
-            <div class="repo-header">
-              <i class="fab fa-github"></i>
-              <span class="repo-name">SaveEncryptionToolkit</span>
+            <div class="project-info">
+              <h3 class="project-title">SaveEncryptionToolkit</h3>
+              <p class="project-description">
+                Encryption-ready toolkit for secure data serialization using
+                AES.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">C#</span>
+                <span class="role-tag">Unity</span>
+              </div>
             </div>
-            <p class="repo-description">
-              Encryption-ready toolkit for secure data serialization using AES.
-            </p>
-            <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
         </div>
       </div>
 
-      <div id="games" class="tab-content">
+      <!-- Games Category -->
+      <div class="project-category">
+        <div class="category-header">
+          <span class="category-label">
+            <i class="fas fa-gamepad"></i> Games
+          </span>
+          <div class="category-divider"></div>
+        </div>
         <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-video">
-              <div class="video-preview" data-video-id="_yQ9IA0cQ-A">
-                <img
-                  src="https://img.youtube.com/vi/_yQ9IA0cQ-A/maxresdefault.jpg"
-                  alt="Thumbnail"
-                />
-                <button class="play-button"><i class="fas fa-play"></i></button>
-              </div>
-            </div>
+          <a
+            href="https://youtu.be/_yQ9IA0cQ-A"
+            target="_blank"
+            class="project-card uniform"
+          >
+            <img
+              class="project-thumb"
+              src="https://img.youtube.com/vi/_yQ9IA0cQ-A/hqdefault.jpg"
+              alt="Trash Frenzy"
+            />
             <div class="project-info">
               <h3 class="project-title">Trash Frenzy</h3>
               <p class="project-description">
-                Robotic fish janitor simulator. Developed using Unity and custom
-                C# systems architecture.
+                Aquatic clean-up sim set in Philippine tourist spots. Defeat
+                Atlantis to restore the ocean.
               </p>
+              <div class="project-meta">
+                <span class="role-tag">Project Manager</span>
+                <span class="role-tag">Gameplay Programmer</span>
+                <span class="role-tag">Game Designer</span>
+              </div>
             </div>
-          </div>
+          </a>
+          <a
+            href="https://youtu.be/PnV9KYkl3QY"
+            target="_blank"
+            class="project-card uniform"
+          >
+            <img
+              class="project-thumb"
+              src="https://img.youtube.com/vi/PnV9KYkl3QY/hqdefault.jpg"
+              alt="Lifebound"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Lifebound</h3>
+              <p class="project-description">
+                3D co-op adventure. Solve puzzles to escape an underground
+                world.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">Gameplay Programmer</span>
+                <span class="role-tag">Multiplayer Engineer</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/2WEyH6xaqGk"
+            target="_blank"
+            class="project-card uniform"
+          >
+            <img
+              class="project-thumb"
+              src="https://img.youtube.com/vi/2WEyH6xaqGk/hqdefault.jpg"
+              alt="Night Light"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Night Light</h3>
+              <p class="project-description">
+                Atmospheric platformer. Collect light orbs to save the world
+                from darkness.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">Project Manager</span>
+                <span class="role-tag">Gameplay Programmer</span>
+                <span class="role-tag">Game Designer</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/BuCFdMbFZus"
+            target="_blank"
+            class="project-card uniform"
+          >
+            <img
+              class="project-thumb"
+              src="https://img.youtube.com/vi/BuCFdMbFZus/hqdefault.jpg"
+              alt="Orders Please"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Orders Please</h3>
+              <p class="project-description">
+                Street food sim. Manage orders and cook under time pressure.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">Gameplay Programmer</span>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://youtu.be/seB4NQnSA40"
+            target="_blank"
+            class="project-card uniform"
+          >
+            <img
+              class="project-thumb"
+              src="https://img.youtube.com/vi/seB4NQnSA40/hqdefault.jpg"
+              alt="Cyclescape"
+            />
+            <div class="project-info">
+              <h3 class="project-title">Cyclescape</h3>
+              <p class="project-description">
+                Educational journey through the menstrual cycle. Break stigmas
+                via exploration.
+              </p>
+              <div class="project-meta">
+                <span class="role-tag">Gameplay Programmer</span>
+                <span class="role-tag">Game Designer</span>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -187,21 +289,57 @@
       <h2 class="section-title">Skills</h2>
 
       <div class="skills-tabs">
-        <button class="skill-tab active" data-skill="backend">Backend</button>
+        <button class="skill-tab active" data-skill="languages">Languages</button>
+        <button class="skill-tab" data-skill="backend">Backend</button>
         <button class="skill-tab" data-skill="lowlevel">Game Engines</button>
       </div>
 
-      <div id="backend" class="tab-content active">
+      <div id="languages" class="tab-content active">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              alt="C++"
+            />
+            <span class="skill-name">C++</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+              alt="C#"
+            />
+            <span class="skill-name">C#</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+              alt="Java"
+            />
+            <span class="skill-name">Java</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+              alt="Rust"
+            />
+            <span class="skill-name">Rust</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="backend" class="tab-content">
         <div class="skills-grid">
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+              alt="Spring Boot"
             />
             <span class="skill-name">Spring Boot</span>
           </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+              alt="ASP.NET Core"
             />
             <span class="skill-name">ASP.NET Core</span>
           </div>
@@ -212,24 +350,17 @@
         <div class="skills-grid">
           <div class="skill-item">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
-              alt="Rust"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+              alt="Unity"
             />
-            <span class="skill-name">Rust (Bevy)</span>
+            <span class="skill-name">Unity</span>
           </div>
           <div class="skill-item">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-              alt="C++"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
+              alt="Godot"
             />
-            <span class="skill-name">C++ (SFML)</span>
-          </div>
-          <div class="skill-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
-            />
-
-            <span class="skill-name">C# (Unity / Godot)</span>
+            <span class="skill-name">Godot</span>
           </div>
         </div>
       </div>

@@ -163,21 +163,11 @@ body {
   }
 
   .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .tools-grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-
-  .tabs {
-    flex-wrap: nowrap;
-    gap: 0;
-  }
-
-  .tab-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
   }
 
   .hero-content {
@@ -323,6 +313,48 @@ body {
   margin-bottom: 1.5rem;
 }
 
+/* ─── Project Categories ─── */
+.project-category {
+  margin-bottom: 4rem;
+}
+
+.project-category:last-child {
+  margin-bottom: 0;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  white-space: nowrap;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--accent-primary);
+  border-radius: 4px;
+}
+
+.category-label i {
+  font-size: 0.75rem;
+}
+
+.category-divider {
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+/* ─── Legacy tab styles kept for Skills section ─── */
 .tabs {
   display: flex;
   justify-content: center;
@@ -375,9 +407,9 @@ body {
 .projects-grid,
 .tools-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 0;
 }
 
 .project-card {
@@ -386,39 +418,75 @@ body {
   transition: all 0.3s ease;
 }
 
-.project-video {
-  position: relative;
-  width: 100%;
-  height: 300px;
+.project-card.uniform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: none;
+  padding: 1.5rem 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: inherit;
 }
 
-.project-video iframe {
+.project-card.uniform:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 2px 12px rgba(251, 59, 100, 0.07);
+}
+
+.project-thumb {
   width: 100%;
-  height: 100%;
-  border: none;
+  aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .project-info {
-  padding: 2rem;
+  width: 100%;
+    text-align: left;
+    padding: 0;
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+    color: var(--accent-primary);
 }
 
 .project-description {
+  font-size: 0.97rem;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-bottom: 0.75rem;
 }
 
 .project-meta {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    opacity: 0.85;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .role-tag {
+    background: var(--bg-tertiary);
+    color: var(--accent-primary);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.85em;
 }
 
 .github-repo-card {
@@ -498,7 +566,6 @@ body {
 .github-repo-card:hover .repo-link {
   opacity: 1;
 }
-
 
 .skills-tabs {
   display: flex;
@@ -645,28 +712,7 @@ body {
 .video-preview {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  background-color: #000;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.video-preview img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* Video Preview Styles */
-.video-preview {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   background-color: #000;
   cursor: pointer;
   overflow: hidden;
@@ -746,7 +792,7 @@ body {
 .project-video {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   overflow: hidden;
   border-radius: 8px;
 }
