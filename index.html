@@ -3,15 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haru | Systems & Backend Developer</title>
+    <title>Haru | Game Systems & Backend Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://www.youtube-nocookie.com" />
-    <link rel="preconnect" href="https://i.ytimg.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -22,8 +16,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="/res/icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+    <script src="js/observer.js" defer></script>
     <script src="js/url-hash-manager.js" defer></script>
-    <script src="js/smooth-scroll.js" defer></script>
   </head>
   <body>
     <nav class="nav">
@@ -48,10 +45,11 @@
 
     <section id="hero" class="hero">
       <div class="hero-content">
-        <div class="hero-greeting">Hello, I'm</div>
+        <div class="hero-greeting">I'm</div>
         <h1 class="hero-name">Haru</h1>
+        <p class="hero-title">Game Systems &amp; Backend Engineer</p>
         <a href="#projects" class="cta-button">
-          View My Work <i class="fas fa-arrow-right"></i>
+          See What I've Built <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </section>
@@ -60,30 +58,29 @@
       <h2 class="section-title">About Me</h2>
       <div class="background-text">
         <p>
-          I am a systems-oriented developer focused on the architecture and
-          logic that power complex applications. My work bridges the gap between
-          <strong>high-level game engines (Unity, Godot)</strong> and robust
-          backend systems utilizing <strong>C# (.NET)</strong> and
-          <strong>Java (Spring Boot)</strong>.
+          I'm a systems-oriented developer currently working as a backend
+          developer at a social media startup. Having shipped multiple games
+          with <strong>Unity</strong> and with growing experience in
+          <strong>Godot</strong>, I gravitated toward the infrastructure layer —
+          the tooling, architecture, and systems that make development faster
+          and more reliable.
         </p>
         <p>
-          I specialize in building the "heavy-duty" infrastructure—custom engine
-          tooling, workflow automation, and scalable server-side logic. My
-          philosophy is rooted in clean, efficient code, and I am currently
-          exploring lower-level game development through <strong>Bevy</strong>
-          and <strong>Raylib</strong>.
+          I specialize in backend API development with
+          <strong>C# (.NET)</strong>, while exploring
+          <strong>Java (Spring Boot)</strong> and lower-level development
+          through <strong>Bevy</strong> and <strong>Raylib</strong>. I also
+          build custom engine tooling and workflow automation for game projects.
         </p>
         <p>
-          I am available for freelance work involving backend API development,
-          custom engine tools, and C#/.NET optimization.
+          I'm open to freelance work in backend APIs and custom engine tooling.
+          If you have something to build, let's talk.
         </p>
       </div>
     </section>
 
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
-
-      <!-- Systems & Tools Category -->
       <div class="project-category">
         <div class="category-header">
           <span class="category-label">
@@ -91,74 +88,9 @@
           </span>
           <div class="category-divider"></div>
         </div>
-        <div class="projects-grid">
-          <a
-            href="https://github.com/haruchanz64/UnityEventToolkit"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <div class="project-info">
-              <h3 class="project-title">UnityEventToolkit</h3>
-              <p class="project-description">
-                Manage and analyze UnityEvents. Provides an intuitive interface
-                to scan, filter, and clean up event listeners efficiently.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">C#</span>
-                <span class="role-tag">Unity</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://github.com/haruchanz64/DebugCommandSystem"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <div class="project-info">
-              <h3 class="project-title">DebugCommandSystem</h3>
-              <p class="project-description">
-                Typed developer console for Unity systems with auto-completion.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">C#</span>
-                <span class="role-tag">Unity</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://github.com/haruchanz64/ScriptableBatchTool"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <div class="project-info">
-              <h3 class="project-title">ScriptableBatchTool</h3>
-              <p class="project-description">
-                Workflow automation for ScriptableObject management and data
-                pipelines.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">C#</span>
-                <span class="role-tag">Unity</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://github.com/haruchanz64/SaveEncryptionToolkit"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <div class="project-info">
-              <h3 class="project-title">SaveEncryptionToolkit</h3>
-              <p class="project-description">
-                Encryption-ready toolkit for secure data serialization using
-                AES.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">C#</span>
-                <span class="role-tag">Unity</span>
-              </div>
-            </div>
-          </a>
+        <div class="projects-grid" id="tools-grid">
+          <!-- Populated by github.js -->
+          <p class="loading-text">Loading projects...</p>
         </div>
       </div>
 
@@ -289,20 +221,15 @@
       <h2 class="section-title">Skills</h2>
 
       <div class="skills-tabs">
-        <button class="skill-tab active" data-skill="languages">Languages</button>
+        <button class="skill-tab active" data-skill="languages">
+          Languages
+        </button>
         <button class="skill-tab" data-skill="backend">Backend</button>
         <button class="skill-tab" data-skill="lowlevel">Game Engines</button>
       </div>
 
       <div id="languages" class="tab-content active">
         <div class="skills-grid">
-          <div class="skill-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-              alt="C++"
-            />
-            <span class="skill-name">C++</span>
-          </div>
           <div class="skill-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
@@ -319,6 +246,13 @@
           </div>
           <div class="skill-item">
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              alt="C++"
+            />
+            <span class="skill-name">C++</span>
+          </div>
+          <div class="skill-item">
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
               alt="Rust"
             />
@@ -331,17 +265,17 @@
         <div class="skills-grid">
           <div class="skill-item">
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-              alt="Spring Boot"
-            />
-            <span class="skill-name">Spring Boot</span>
-          </div>
-          <div class="skill-item">
-            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
               alt="ASP.NET Core"
             />
             <span class="skill-name">ASP.NET Core</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+              alt="Spring Boot"
+            />
+            <span class="skill-name">Spring Boot</span>
           </div>
         </div>
       </div>
@@ -368,10 +302,10 @@
 
     <section id="contact" class="section contact">
       <div class="contact-content">
-        <h2 class="contact-title">Let's Connect</h2>
+        <h2 class="contact-title">Get in Touch</h2>
         <p class="contact-description">
-          Looking for a systems architect or a custom backend solution? Let's
-          build something solid.
+          I'm open to freelance work in backend APIs and custom engine tooling.
+          If you have something to build, let's talk.
         </p>
         <a href="mailto:radam.aronjake@gmail.com" class="contact-email">
           <i class="fas fa-envelope"></i> radam.aronjake@gmail.com
@@ -405,8 +339,7 @@
 
     <script src="js/theme.js"></script>
     <script src="js/tabs.js"></script>
-    <script src="js/parallax.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/video-loader.js"></script>
+    <script src="js/github.js"></script>
   </body>
 </html>
