@@ -1,25 +1,25 @@
 :root {
-  --bg-primary: #000000; 
+  --bg-primary: #000000;
   --bg-secondary: #121212;
   --bg-tertiary: #1e1e1e;
-  --text-primary: #ffffff; 
+  --text-primary: #ffffff;
   --text-secondary: #b2b2b2;
   --text-muted: #949494;
-  --accent-primary: #fb3b64; 
-  --accent-secondary: #ff5c7d;
+  --accent-primary: #ffa5c3;
+    --accent-secondary: #ffb8d0;
   --border-color: #333333;
 }
 
 .light-theme {
-  --bg-primary: #ffffff;   
-  --bg-secondary: #f8f9fa;
-  --bg-tertiary: #f1f3f5;
-  --text-primary: #000000;  
-  --text-secondary: #595959;
-  --text-muted: #757575;
-  --accent-primary: #d81b45;
-  --accent-secondary: #fb3b64;
-  --border-color: #d1d1d1;
+  --bg-primary: #f9f9f9;
+    --bg-secondary: #f0f0f0;
+    --bg-tertiary: #e6e6e6;
+    --text-primary: #111111;
+    --text-secondary: #555555;
+    --text-muted: #888888;
+    --accent-primary: #d4607a;
+    --accent-secondary: #ffa5c3;
+    --border-color: #d0d0d0;
 }
 
 * {
@@ -408,7 +408,7 @@ body {
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+  gap: 1.5rem;
     margin-top: 0;
 }
 
@@ -444,7 +444,7 @@ body {
 .project-thumb {
   width: 100%;
   aspect-ratio: 16/9;
-    object-fit: cover;
+  object-fit: cover;
     border-radius: 6px;
     margin-bottom: 1rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
@@ -452,7 +452,7 @@ body {
 
 .project-info {
   width: 100%;
-    text-align: left;
+  text-align: left;
     padding: 0;
 }
 
@@ -460,7 +460,7 @@ body {
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-    color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 .project-description {
@@ -471,7 +471,7 @@ body {
 
 .project-meta {
   font-size: 0.85rem;
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
     padding-top: 0.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     opacity: 0.85;
@@ -635,6 +635,8 @@ body {
 .contact {
   background: var(--bg-secondary);
   text-align: center;
+  padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
 .contact-content {
