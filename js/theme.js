@@ -17,7 +17,6 @@ function updateToggleIcon() {
   }
 }
 
-// Apply initial theme
 if (savedTheme) {
   body.classList.toggle("light-theme", savedTheme === "light");
 } else {
