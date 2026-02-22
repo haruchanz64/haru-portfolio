@@ -661,7 +661,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: var(--accent-secondary);
+  background: var(--accent-primary);
   color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
