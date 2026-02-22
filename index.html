@@ -28,7 +28,9 @@
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <a href="#hero" class="nav-logo"><img src="/res/icon.png" alt="Haru Logo"/></a>
+        <a href="#hero" class="nav-logo"
+          ><img src="/res/icon.png" alt="Haru Logo"
+        /></a>
         <ul class="nav-links">
           <li><a href="#background" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -36,8 +38,12 @@
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle"><i class="fas fa-sun"></i></button>
-          <button id="burger-menu-toggle" class="burger-menu"><i class="fas fa-ellipsis-vertical"></i></button>
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button id="burger-menu-toggle" class="burger-menu">
+            <i class="fas fa-ellipsis-vertical"></i>
+          </button>
         </div>
       </div>
     </nav>
@@ -46,7 +52,6 @@
       <div class="hero-content">
         <div class="hero-greeting">Hello, I'm</div>
         <h1 class="hero-name">Haru</h1>
-        <p class="hero-tagline">Systems Engineer | Backend Architect | Game Tooling</p>
         <a href="#projects" class="cta-button">
           View My Work <i class="fas fa-arrow-right"></i>
         </a>
@@ -57,17 +62,22 @@
       <h2 class="section-title">About Me</h2>
       <div class="background-text">
         <p>
-          I am a systems and backend developer focused on building high-performance, scalable architectures. 
-          My work ranges from enterprise-grade backend logic with <strong>Java (Spring Boot)</strong> and <strong>ASP.NET Core</strong> 
-          to low-level engine modules and systems programming.
+          I am a systems-oriented developer focused on the architecture and
+          logic that power complex applications. My work bridges the gap between
+          <strong>high-level game engines (Unity, Godot)</strong> and robust
+          backend systems utilizing <strong>C# (.NET)</strong> and
+          <strong>Java (Spring Boot)</strong>.
         </p>
         <p>
-          I specialize in the intersection of performance and safety, leveraging <strong>Rust (Bevy)</strong> and <strong>C++ (SFML)</strong> 
-          to build robust tools and frameworks. My philosophy is rooted in clean, efficient code—building the heavy-duty 
-          infrastructure that makes complex experiences possible.
+          I specialize in building the "heavy-duty" infrastructure—from custom
+          engine tooling in <strong>Bevy</strong> to scalable server-side logic.
+          My philosophy is rooted in clean, efficient code, and I am currently
+          expanding my systems-level expertise into <strong>Rust</strong> and
+          low-level frameworks like <strong>SFML</strong>.
         </p>
         <p>
-          I am available for freelance work involving backend API development, custom engine tooling, and systems optimization.
+          I am available for freelance work involving backend API development,
+          custom engine tools, and C#/.NET optimization.
         </p>
       </div>
     </section>
@@ -76,45 +86,74 @@
       <h2 class="section-title">Projects</h2>
 
       <div class="tabs">
-        <button class="tab-button active" data-tab="tools">Systems & Tools</button>
+        <button class="tab-button active" data-tab="tools">
+          Systems & Tools
+        </button>
         <button class="tab-button" data-tab="games">Games</button>
       </div>
 
       <div id="tools" class="tab-content active">
         <div class="tools-grid">
-          <a href="https://github.com/haruchanz64/UnityEventToolkit" target="_blank" class="github-repo-card">
+          <a
+            href="https://github.com/haruchanz64/UnityEventToolkit"
+            target="_blank"
+            class="github-repo-card"
+          >
             <div class="repo-header">
               <i class="fab fa-github"></i>
               <span class="repo-name">UnityEventToolkit</span>
             </div>
-            <p class="repo-description">Manage and analyze UnityEvents. Provides an intuitive interface to scan, filter, and clean up event listeners efficiently.</p>
+            <p class="repo-description">
+              Manage and analyze UnityEvents. Provides an intuitive interface to
+              scan, filter, and clean up event listeners efficiently.
+            </p>
             <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
 
-          <a href="https://github.com/haruchanz64/DebugCommandSystem" target="_blank" class="github-repo-card">
+          <a
+            href="https://github.com/haruchanz64/DebugCommandSystem"
+            target="_blank"
+            class="github-repo-card"
+          >
             <div class="repo-header">
               <i class="fab fa-github"></i>
               <span class="repo-name">DebugCommandSystem</span>
             </div>
-            <p class="repo-description">Typed developer console for Unity/Godot systems with auto-completion.</p>
+            <p class="repo-description">
+              Typed developer console for Unity/Godot systems with
+              auto-completion.
+            </p>
             <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
 
-          <a href="https://github.com/haruchanz64/ScriptableBatchTool" target="_blank" class="github-repo-card">
+          <a
+            href="https://github.com/haruchanz64/ScriptableBatchTool"
+            target="_blank"
+            class="github-repo-card"
+          >
             <div class="repo-header">
               <i class="fab fa-github"></i>
               <span class="repo-name">ScriptableBatchTool</span>
             </div>
-            <p class="repo-description">Workflow automation for ScriptableObject management and data pipelines.</p>
+            <p class="repo-description">
+              Workflow automation for ScriptableObject management and data
+              pipelines.
+            </p>
             <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
 
-          <a href="https://github.com/haruchanz64/SaveEncryptionToolkit" target="_blank" class="github-repo-card">
+          <a
+            href="https://github.com/haruchanz64/SaveEncryptionToolkit"
+            target="_blank"
+            class="github-repo-card"
+          >
             <div class="repo-header">
               <i class="fab fa-github"></i>
               <span class="repo-name">SaveEncryptionToolkit</span>
             </div>
-            <p class="repo-description">Encryption-ready toolkit for secure data serialization using AES.</p>
+            <p class="repo-description">
+              Encryption-ready toolkit for secure data serialization using AES.
+            </p>
             <div class="repo-footer"><span class="repo-language">C#</span></div>
           </a>
         </div>
@@ -125,13 +164,19 @@
           <div class="project-card">
             <div class="project-video">
               <div class="video-preview" data-video-id="_yQ9IA0cQ-A">
-                <img src="https://img.youtube.com/vi/_yQ9IA0cQ-A/maxresdefault.jpg" alt="Thumbnail" />
+                <img
+                  src="https://img.youtube.com/vi/_yQ9IA0cQ-A/maxresdefault.jpg"
+                  alt="Thumbnail"
+                />
                 <button class="play-button"><i class="fas fa-play"></i></button>
               </div>
             </div>
             <div class="project-info">
               <h3 class="project-title">Trash Frenzy</h3>
-              <p class="project-description">Robotic fish janitor simulator. Developed using Unity and custom C# systems architecture.</p>
+              <p class="project-description">
+                Robotic fish janitor simulator. Developed using Unity and custom
+                C# systems architecture.
+              </p>
             </div>
           </div>
         </div>
@@ -149,11 +194,15 @@
       <div id="backend" class="tab-content active">
         <div class="skills-grid">
           <div class="skill-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+            />
             <span class="skill-name">Spring Boot</span>
           </div>
           <div class="skill-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
+            />
             <span class="skill-name">ASP.NET Core</span>
           </div>
         </div>
@@ -162,17 +211,24 @@
       <div id="lowlevel" class="tab-content">
         <div class="skills-grid">
           <div class="skill-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust"/>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+              alt="Rust"
+            />
             <span class="skill-name">Rust (Bevy)</span>
           </div>
           <div class="skill-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++"/>
-            <span class="skill-name">C++ (SFML, Pyrite64)</span>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+              alt="C++"
+            />
+            <span class="skill-name">C++ (SFML)</span>
           </div>
           <div class="skill-item">
-            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-          
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+            />
+
             <span class="skill-name">C# (Unity / Godot)</span>
           </div>
         </div>
@@ -182,20 +238,38 @@
     <section id="contact" class="section contact">
       <div class="contact-content">
         <h2 class="contact-title">Let's Connect</h2>
-        <p class="contact-description">Looking for a systems architect or a custom backend solution? Let's build something solid.</p>
+        <p class="contact-description">
+          Looking for a systems architect or a custom backend solution? Let's
+          build something solid.
+        </p>
         <a href="mailto:radam.aronjake@gmail.com" class="contact-email">
           <i class="fas fa-envelope"></i> radam.aronjake@gmail.com
         </a>
         <div class="social-links">
-          <a href="https://linkedin.com/in/radamaj/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/haruchanz64" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="https://discord.com/users/1450100286374019133" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+          <a
+            href="https://linkedin.com/in/radamaj/"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/haruchanz64"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://discord.com/users/1450100286374019133"
+            target="_blank"
+            class="social-link"
+            ><i class="fab fa-discord"></i
+          ></a>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2026 Aron Jake S. Radam. All rights reserved.</p>
+      <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
 
     <script src="js/theme.js"></script>
