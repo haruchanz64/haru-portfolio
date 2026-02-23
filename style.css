@@ -8,6 +8,10 @@
   --accent-primary: #ffa5c3;
   --accent-secondary: #ffb8d0;
   --border-color: #333333;
+
+  --font-main: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 .light-theme {
@@ -35,7 +39,7 @@ html {
 
 body {
   background: var(--bg-primary);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-main);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -43,8 +47,6 @@ body {
     background 0.5s ease,
     color 0.5s ease;
 }
-
-/* ─── Nav ─── */
 
 .nav {
   position: fixed;
@@ -69,6 +71,7 @@ body {
 .nav-logo {
   font-size: 1.5rem;
   font-weight: 700;
+  font-family: var(--font-display);
   color: var(--accent-primary);
   text-decoration: none;
   flex: 1;
@@ -102,6 +105,8 @@ body {
 }
 
 .nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
   color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
@@ -196,8 +201,6 @@ body {
   }
 }
 
-/* ─── Hero ─── */
-
 .hero {
   min-height: 100vh;
   display: flex;
@@ -225,7 +228,8 @@ body {
 }
 
 .hero-greeting {
-  font-size: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
   color: var(--text-secondary);
   margin-bottom: 1rem;
   animation-delay: 0.2s;
@@ -233,6 +237,7 @@ body {
 
 .hero-name {
   font-size: clamp(3.5rem, 12vw, 7rem);
+  font-family: var(--font-display);
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--accent-primary);
@@ -257,6 +262,7 @@ body {
   color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
+  font-family: var(--font-display);
   transition: all 0.3s ease;
   animation-delay: 0.8s;
 }
@@ -266,8 +272,6 @@ body {
   color: var(--bg-primary);
 }
 
-/* ─── Sections ─── */
-
 .section {
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -275,6 +279,7 @@ body {
 }
 
 .section-title {
+  font-family: var(--font-display);
   font-size: 2.5rem;
   font-weight: 700;
   text-align: center;
@@ -308,8 +313,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* ─── Project Categories ─── */
-
 .project-category {
   margin-bottom: 4rem;
 }
@@ -331,6 +334,7 @@ body {
   gap: 0.5rem;
   font-size: 0.8rem;
   font-weight: 700;
+  font-family: var(--font-mono);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent-primary);
@@ -404,6 +408,7 @@ body {
 }
 
 .project-title {
+  font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -428,6 +433,7 @@ body {
 }
 
 .role-tag {
+  font-family: var(--font-mono);
   background: var(--bg-tertiary);
   color: var(--accent-primary);
   padding: 2px 8px;
@@ -435,8 +441,6 @@ body {
   font-weight: 500;
   font-size: 0.85em;
 }
-
-/* ─── Skills ─── */
 
 .skills-tabs {
   display: flex;
@@ -447,6 +451,7 @@ body {
 }
 
 .skill-tab {
+  font-family: var(--font-mono);
   padding: 0.75rem 1.5rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
@@ -499,13 +504,12 @@ body {
 }
 
 .skill-name {
-  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-secondary);
   text-align: center;
 }
-
-/* ─── Contact ─── */
 
 .contact {
   background: var(--bg-secondary);
@@ -520,6 +524,7 @@ body {
 }
 
 .contact-title {
+  font-family: var(--font-display);
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--text-primary);
@@ -540,6 +545,7 @@ body {
   color: var(--bg-primary);
   text-decoration: none;
   font-weight: 600;
+  font-family: var(--font-mono);
   margin-bottom: 2rem;
   transition: all 0.3s ease;
 }
@@ -577,17 +583,14 @@ body {
   transform: translateY(-2px);
 }
 
-/* ─── Footer ─── */
-
 .footer {
   padding: 2rem;
   text-align: center;
   border-top: 1px solid var(--border-color);
   color: var(--text-muted);
-  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
 }
-
-/* ─── Reveal Animation ─── */
 
 .reveal {
   opacity: 0;
