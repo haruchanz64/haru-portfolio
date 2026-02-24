@@ -1,7 +1,7 @@
 ---
 title: Automating the Creation of Blogs via Markdown
 date: Feb 24, 2026
-tags: #ChangeMe #Software
+tags: #BuildTools #NodeJS #DeveloperExperience #Automation
 ---
 
 As a "Systems & Backend Engineer," doing things manually feels like a chore. When I decided to add a devlog to my portfolio, I realized that manually updating a `posts.json` file every time I wrote a Markdown post was a recipe for an outdated blog.

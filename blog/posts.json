@@ -5,8 +5,10 @@
     "date": "Feb 24, 2026",
     "readTime": 3,
     "tags": [
-      "#ChangeMe",
-      "#Software"
+      "#BuildTools",
+      "#NodeJS",
+      "#DeveloperExperience",
+      "#Automation"
     ],
     "filePath": "posts/automating-the-creation-of-blogs-via-markdown.md"
   }
