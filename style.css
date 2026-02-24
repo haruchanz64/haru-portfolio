@@ -655,6 +655,15 @@ body {
   margin: 2.5rem 0 1rem;
 }
 
+.blog-content a {
+  text-decoration: none;
+  color: var(--accent-primary);
+}
+
+.blog-content a:hover {
+  color: var(--accent-secondary);
+}
+
 pre {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
