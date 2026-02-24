@@ -6,24 +6,39 @@
     <title>Haru | Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="../style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/blog-config.js" defer></script>
+    <script src="../js/github.js" defer></script>
     <script src="../js/theme.js" defer></script>
+
+    <script src="../js/nav.js" defer></script>
   </head>
   <body>
-    <div id="progress-container"><div id="progress-bar"></div></div>
-
     <nav class="nav">
       <div class="nav-container">
-        <a href="../index.html" class="nav-logo">Haru</a>
+        <a href="../index.html#hero" class="nav-logo">Haru</a>
         <ul class="nav-links">
           <li><a href="../index.html#background" class="nav-link">About</a></li>
-          <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+          <li>
+            <a href="../index.html#projects" class="nav-link">Projects</a>
+          </li>
           <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
           <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
-          <li><a href="./index.html" class="nav-link active">Blog</a></li>
         </ul>
         <div class="nav-actions">
           <button id="theme-toggle" class="theme-toggle">
@@ -36,20 +51,15 @@
       </div>
     </nav>
 
-    <main class="blog-post-container">
-      <a href="./index.html" class="back-home">
-        <i class="fas fa-arrow-left"></i> Back to Blog
+    <section id="blog" class="section">
+      <a href="../index.html" class="back-home" style="margin-bottom: 2rem">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
       </a>
-      <div id="post-content">
-        <p style="color: var(--text-muted)">Loading post...</p>
-      </div>
-    </main>
-
+      <h2 class="section-title">Blog</h2>
+      <div id="blog-grid"></div>
+    </section>
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-
-    <script src="../js/nav.js" defer></script>
-    <script src="../js/reader.js" defer></script>
   </body>
 </html>

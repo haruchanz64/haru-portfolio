@@ -25,11 +25,15 @@ function highlightNavOnScroll() {
   const scrollY = window.pageYOffset;
   const pageBottom = document.documentElement.scrollHeight - window.innerHeight;
 
-  // If at the bottom of the page, highlight the last nav link
   if (scrollY >= pageBottom - 5) {
     navLinkItems.forEach((link) => link.classList.remove("active"));
-    const lastLink = navLinkItems[navLinkItems.length - 1];
-    if (lastLink) lastLink.classList.add("active");
+    // Find the last nav link that actually corresponds to a section
+    const sectionLinks = [...navLinkItems].filter((link) => {
+      const href = link.getAttribute("href");
+      return href && href.startsWith("#");
+    });
+    const lastSectionLink = sectionLinks[sectionLinks.length - 1];
+    if (lastSectionLink) lastSectionLink.classList.add("active");
     return;
   }
 

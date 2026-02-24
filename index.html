@@ -26,28 +26,29 @@
     <script src="js/url-hash-manager.js" defer></script>
     <script src="js/blog-config.js" defer></script>
     <script src="js/github.js" defer></script>
+        <script src="js/theme.js" defer></script>
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="#hero" class="nav-logo">Haru</a>
-        <ul class="nav-links">
-          <li><a href="#background" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#blog" class="nav-link">Blog</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle">
-            <i class="fas fa-sun"></i>
-          </button>
-          <button id="burger-menu-toggle" class="burger-menu">
-            <i class="fas fa-ellipsis-vertical"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
+<nav class="nav">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">Haru</a>
+    <ul class="nav-links">
+      <li><a href="#background" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="./blog/index.html" class="nav-link">Blog</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-sun"></i>
+      </button>
+      <button id="burger-menu-toggle" class="burger-menu">
+        <i class="fas fa-ellipsis-vertical"></i>
+      </button>
+    </div>
+  </div>
+</nav>
 
     <section id="hero" class="hero">
       <div class="hero-content">
@@ -303,10 +304,21 @@
         </div>
       </div>
     </section>
-    <section id="blog" class="section">
-      <h2 class="section-title">Devlog & Articles</h2>
-      <div class="projects-grid" id="blog-grid">
-        <p class="loading-text">Parsing feed...</p>
+    <!-- Blog Preview Section -->
+    <section id="blog-preview" class="section">
+      <h2 class="section-title">Blog</h2>
+      <p
+        class="background-text"
+        style="text-align: center; margin-bottom: 2rem"
+      >
+        I write about systems engineering, game dev tooling, and developer
+        experience.
+      </p>
+      <div id="blog-preview-grid"></div>
+      <div style="text-align: center; margin-top: 2rem">
+        <a href="./blog/index.html" class="cta-button">
+          View All Posts <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </section>
     <section id="contact" class="section contact">
@@ -345,8 +357,6 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-
-    <script src="js/theme.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/nav.js"></script>
   </body>

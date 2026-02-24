@@ -53,7 +53,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
@@ -164,7 +164,7 @@ body {
 
 @media (min-width: 769px) {
   .nav {
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
   }
 
   .section {
@@ -601,6 +601,204 @@ body {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  z-index: 10001;
+}
+
+#progress-bar {
+  height: 100%;
+  background: var(--accent-primary);
+  width: 0%;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px var(--accent-primary);
+}
+
+.blog-post-container {
+  max-width: 800px;
+  margin: 120px auto 60px;
+  padding: 0 1.5rem;
+}
+
+.blog-header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.blog-meta {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.blog-content {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.blog-content h2 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  margin: 2.5rem 0 1rem;
+}
+
+pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+code {
+  font-family: var(--font-mono);
+  color: var(--accent-primary);
+}
+
+.back-home {
+  font-family: var(--font-mono);
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.back-home:hover {
+  color: var(--accent-primary);
+}
+
+#blog.section {
+  padding-top: calc(80px + 3rem);
+}
+
+/* ─── Blog Cards ─── */
+
+#blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog-card {
+  display: block;
+  padding: 1.75rem 2rem;
+  background: var(--bg-secondary);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.blog-card:last-child {
+  border-bottom: none;
+}
+
+.blog-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent-primary);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.blog-card:hover {
+  background: var(--bg-tertiary);
+}
+
+.blog-card:hover::before {
+  opacity: 1;
+}
+
+.blog-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.blog-card-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+.blog-card:hover .blog-card-title {
+  color: var(--accent-primary);
+}
+
+.blog-card-arrow {
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.blog-card:hover .blog-card-arrow {
+  transform: translate(3px, -3px);
+  color: var(--accent-primary);
+}
+
+.blog-card-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-card-meta span + span::before {
+  content: "·";
+  margin-right: 0.5rem;
+  opacity: 0.4;
+}
+
+.blog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.blog-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-primary);
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--accent-primary) 30%, transparent);
+  padding: 2px 8px;
+  border-radius: 20px;
 }
 
 /* ─── Keyframes ─── */
