@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haru | Devlog</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="blog-style.css" />
+  </head>
+  <body>
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-theme");
+      }
+    </script>
+
+    <div id="progress-container"><div id="progress-bar"></div></div>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="../index.html" class="nav-logo">Haru</a>
+        <div class="nav-actions">
+          <a href="../index.html#blog" class="back-home"
+            ><i class="fas fa-arrow-left"></i> Back to Feed</a
+          >
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <article class="blog-post-container">
+      <header class="blog-header">
+        <h1 id="post-title">Loading...</h1>
+        <div class="blog-meta" id="post-meta"></div>
+      </header>
+
+      <div class="blog-content" id="post-content"></div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.min.js"></script>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/progress.js"></script>
+
+    <script>
+      async function loadMarkdownPost() {
+        const params = new URLSearchParams(window.location.search);
+        const postId = params.get("id");
+
+        try {
+          const response = await fetch("posts.json");
+          const posts = await response.json();
+          const post = posts.find((p) => p.id === postId);
+
+          if (!post) {
+            document.getElementById("post-content").innerHTML =
+              "<h1>Post not found.</h1>";
+            return;
+          }
+
+          const mdResponse = await fetch(post.filePath);
+          let mdText = await mdResponse.text();
+
+          const cleanedMd = mdText
+            .replace(/^(title:|date:|tags:).*\n?/gm, "")
+            .trim();
+
+          // Set Metadata
+          document.title = `${post.title} | Haru`;
+          document.getElementById("post-title").innerText = post.title;
+          document.getElementById("post-meta").innerHTML = `
+  <span><i class="far fa-calendar"></i> ${post.date}</span>
+  <span><i class="fas fa-tags"></i> ${post.tags.join(" ")}</span>
+`;
+
+          // Convert MD to HTML and Highlight Code
+          document.getElementById("post-content").innerHTML =
+            marked.parse(cleanedMd);
+          Prism.highlightAll(); // Triggers syntax highlighting
+        } catch (err) {
+          console.error("Reader Error:", err);
+        }
+      }
+      window.onload = loadMarkdownPost;
+    </script>
+  </body>
+</html>
