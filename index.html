@@ -9,7 +9,7 @@
         document.documentElement.classList.add('light-theme');
       }
     </script>
-    <title>Haru | Game Systems & Backend Engineer</title>
+    <title>Haru | Game Systems, Backend Engineer & DevOps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="res/icon.png">
     <script src="js/observer.js" defer></script>
     <script src="js/url-hash-manager.js" defer></script>
     <script src="js/blog-config.js" defer></script>
@@ -37,7 +38,9 @@
   <body>
 <nav class="nav">
   <div class="nav-container">
-    <a href="#hero" class="nav-logo">Haru</a>
+    <a href="#hero" class="nav-logo">
+      <img src="./res/icon.png" alt="Haru" style="height: 48px;" />
+    </a>
     <ul class="nav-links">
       <li><a href="#background" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -57,9 +60,10 @@
 
     <section id="hero" class="hero">
       <div class="hero-content">
-        <div class="hero-greeting">I'm</div>
+        <img src="./res/icon.png" alt="Haru Logo" style="height: 128px; margin-bottom: 1rem;" />
+        <div class="hero-greeting">Hello, I'm</div>
         <h1 class="hero-name">Haru</h1>
-        <p class="hero-title">Game Systems &amp; Backend Engineer</p>
+        <p class="hero-title">Game Systems, Backend Engineer &amp; DevOps</p>
         <a href="#projects" class="cta-button">
           See What I've Built <i class="fas fa-arrow-right"></i>
         </a>
@@ -75,17 +79,17 @@
           with <strong>Unity</strong> and with growing experience in
           <strong>Godot</strong>, I gravitated toward the infrastructure layer —
           the tooling, architecture, and systems that make development faster
-          and more reliable.
+          and more reliable. Recently, I've started learning DevOps practices to further improve deployment and automation.
         </p>
         <p>
           I specialize in backend API development with
           <strong>C# (.NET)</strong>, while exploring
           <strong>Java (Spring Boot)</strong> and lower-level game development
-          through <strong>Bevy</strong> and <strong>Raylib</strong>. I also
-          build custom engine tooling and workflow automation for game projects.
+          through <strong>Bevy</strong> and <strong>Raylib</strong>. I'm also
+          expanding my skills in DevOps, including containerization and workflow automation with tools like <strong>Docker</strong>.
         </p>
         <p>
-          I'm open to freelance work in backend APIs and custom engine tooling.
+          I'm open to freelance work in backend APIs, custom engine tooling, and DevOps solutions.
           If you have something to build, let's talk.
         </p>
       </div>
@@ -234,7 +238,7 @@
         <button class="skill-tab active" data-skill="languages">
           Languages
         </button>
-        <button class="skill-tab" data-skill="backend">Backend</button>
+        <button class="skill-tab" data-skill="backend">Backend & DevOps</button>
         <button class="skill-tab" data-skill="lowlevel">Game Engines</button>
       </div>
 
@@ -286,6 +290,20 @@
               alt="Spring Boot"
             />
             <span class="skill-name">Spring Boot</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+              alt="Docker"
+            />
+            <span class="skill-name">Docker</span>
+          </div>
+          <div class="skill-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <span class="skill-name">Git</span>
           </div>
         </div>
       </div>
