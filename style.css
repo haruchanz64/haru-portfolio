@@ -265,6 +265,7 @@ body {
   font-family: var(--font-display);
   transition: all 0.3s ease;
   animation-delay: 0.8s;
+  border-radius: 10px;
 }
 
 .cta-button:hover {
@@ -466,6 +467,7 @@ body {
   background: var(--accent-primary);
   color: var(--bg-primary);
   border-bottom: 2px solid var(--accent-primary);
+  border-radius: 10px;
 }
 
 .tab-content {
@@ -548,6 +550,7 @@ body {
   font-family: var(--font-mono);
   margin-bottom: 2rem;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .contact-email:hover {
@@ -574,6 +577,7 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
   border: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 
 .social-link:hover {
