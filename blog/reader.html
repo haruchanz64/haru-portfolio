@@ -23,6 +23,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../js/theme.js" defer></script>
+    <script src="../js/nav.js" defer></script>
     <link rel="icon" type="image/png" href="../res/icon.png">
   </head>
   <body>
@@ -38,8 +39,6 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-
-    <script src="../js/nav.js" defer></script>
     <script src="../js/reader.js" defer></script>
     <script>
       fetch('../partials/navbar.html')
@@ -47,6 +46,7 @@
         .then(html => {
           document.body.insertAdjacentHTML('afterbegin', html);
           if (window.initThemeToggle) window.initThemeToggle();
+          if (window.initNav) window.initNav();
         });
     </script>
   </body>

@@ -1,16 +1,19 @@
+window.initNav = function() {
+  const burger = document.getElementById('burger-menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (burger && navLinks) {
+    burger.onclick = () => {
+      navLinks.classList.toggle('active');
+    };
+  }
+};
+
 const burgerMenuToggle = document.getElementById("burger-menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navLinkItems = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section[id]");
 
-if (burgerMenuToggle && navLinks) {
-  burgerMenuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    burgerMenuToggle.innerHTML = navLinks.classList.contains("active")
-      ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-ellipsis-vertical"></i>';
-  });
-}
+window.initNav();
 
 navLinkItems.forEach((link) => {
   link.addEventListener("click", () => {

@@ -31,7 +31,6 @@
     <script src="../js/blog-config.js" defer></script>
     <script src="../js/github.js" defer></script>
     <script src="../js/theme.js" defer></script>
-
     <script src="../js/nav.js" defer></script>
     <link rel="icon" type="image/png" href="../res/icon.png" />
   </head>
@@ -52,6 +51,7 @@
         .then((html) => {
           document.body.insertAdjacentHTML("afterbegin", html);
           if (window.initThemeToggle) window.initThemeToggle();
+          if (window.initNav) window.initNav();
         });
     </script>
   </body>

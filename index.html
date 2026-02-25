@@ -34,6 +34,7 @@
     <script src="js/blog-config.js" defer></script>
     <script src="js/github.js" defer></script>
     <script src="js/theme.js" defer></script>
+    <script src="/js/nav.js" defer></script>
   </head>
   <body>
     <section id="hero" class="hero">
@@ -370,9 +371,9 @@
         .then((html) => {
           document.body.insertAdjacentHTML("afterbegin", html);
           if (window.initThemeToggle) window.initThemeToggle();
+          if (window.initNav) window.initNav();
         });
     </script>
     <script src="js/tabs.js"></script>
-    <script src="js/nav.js"></script>
   </body>
 </html>
