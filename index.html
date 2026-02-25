@@ -369,6 +369,7 @@
         .then((res) => res.text())
         .then((html) => {
           document.body.insertAdjacentHTML("afterbegin", html);
+          if (window.initThemeToggle) window.initThemeToggle();
         });
     </script>
     <script src="js/tabs.js"></script>
