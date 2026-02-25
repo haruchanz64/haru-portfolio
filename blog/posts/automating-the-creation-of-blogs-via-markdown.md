@@ -32,7 +32,7 @@ The "brain" of the operation is an indexer that scans my `/posts` directory. It 
 - **YAML Parsing:** Extracts metadata directly from the Markdown header.
 - **Automated Indexing:** Generates a fresh `posts.json` that the frontend can consume instantly.
 
-### 3. The Dynamic UI — [`block-config.js`](https://github.com/haruchanz64/haru-portfolio/blob/main/js/blog-config.js)
+### 3. The Dynamic UI — [`blog-config.js`](https://github.com/haruchanz64/haru-portfolio/blob/main/js/blog-config.js)
 
 On the frontend, the blog grid is no longer static. It fetches the generated `posts.json` and maps the data into UI cards, displaying the calculated read time and tags automatically.
 
