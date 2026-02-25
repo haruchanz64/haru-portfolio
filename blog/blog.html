@@ -36,30 +36,6 @@
     <link rel="icon" type="image/png" href="../res/icon.png" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="../index.html#hero" class="nav-logo">
-          <img src="../res/icon.png" alt="Haru" style="height: 48px" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="../index.html#background" class="nav-link">About</a></li>
-          <li>
-            <a href="../index.html#projects" class="nav-link">Projects</a>
-          </li>
-          <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
-          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle">
-            <i class="fas fa-sun"></i>
-          </button>
-          <button id="burger-menu-toggle" class="burger-menu">
-            <i class="fas fa-ellipsis-vertical"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-
     <section id="blog" class="section">
       <a href="../index.html" class="back-home" style="margin-bottom: 2rem">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
@@ -70,5 +46,12 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
+    <script>
+      fetch("../partials/navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.body.insertAdjacentHTML("afterbegin", html);
+        });
+    </script>
   </body>
 </html>

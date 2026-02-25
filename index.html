@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      const theme = localStorage.getItem('theme');
-      if (theme === 'light') {
-        document.documentElement.classList.add('light-theme');
+      const theme = localStorage.getItem("theme");
+      if (theme === "light") {
+        document.documentElement.classList.add("light-theme");
       }
     </script>
     <title>Haru | Game Systems, Backend Engineer & DevOps</title>
@@ -28,39 +28,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="res/icon.png">
+    <link rel="icon" type="image/png" href="res/icon.png" />
     <script src="js/observer.js" defer></script>
     <script src="js/url-hash-manager.js" defer></script>
     <script src="js/blog-config.js" defer></script>
     <script src="js/github.js" defer></script>
-        <script src="js/theme.js" defer></script>
+    <script src="js/theme.js" defer></script>
   </head>
   <body>
-<nav class="nav">
-  <div class="nav-container">
-    <a href="#hero" class="nav-logo">
-      <img src="./res/icon.png" alt="Haru" style="height: 48px;" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="#background" class="nav-link">About</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <div class="nav-actions">
-      <button id="theme-toggle" class="theme-toggle">
-        <i class="fas fa-sun"></i>
-      </button>
-      <button id="burger-menu-toggle" class="burger-menu">
-        <i class="fas fa-ellipsis-vertical"></i>
-      </button>
-    </div>
-  </div>
-</nav>
-
     <section id="hero" class="hero">
       <div class="hero-content">
-        <img src="./res/icon.png" alt="Haru Logo" style="height: 128px; margin-bottom: 1rem;" />
+        <img
+          src="./res/icon.png"
+          alt="Haru Logo"
+          style="height: 128px; margin-bottom: 1rem"
+        />
         <div class="hero-greeting">Hello, I'm</div>
         <h1 class="hero-name">Haru</h1>
         <p class="hero-title">Game Systems, Backend Engineer &amp; DevOps</p>
@@ -79,18 +61,20 @@
           with <strong>Unity</strong> and with growing experience in
           <strong>Godot</strong>, I gravitated toward the infrastructure layer —
           the tooling, architecture, and systems that make development faster
-          and more reliable. Recently, I've started learning DevOps practices to further improve deployment and automation.
+          and more reliable. Recently, I've started learning DevOps practices to
+          further improve deployment and automation.
         </p>
         <p>
           I specialize in backend API development with
           <strong>C# (.NET)</strong>, while exploring
           <strong>Java (Spring Boot)</strong> and lower-level game development
           through <strong>Bevy</strong> and <strong>Raylib</strong>. I'm also
-          expanding my skills in DevOps, including containerization and workflow automation with tools like <strong>Docker</strong>.
+          expanding my skills in DevOps, including containerization and workflow
+          automation with tools like <strong>Docker</strong>.
         </p>
         <p>
-          I'm open to freelance work in backend APIs, custom engine tooling, and DevOps solutions.
-          If you have something to build, let's talk.
+          I'm open to freelance work in backend APIs, custom engine tooling, and
+          DevOps solutions. If you have something to build, let's talk.
         </p>
       </div>
     </section>
@@ -380,6 +364,13 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
+    <script>
+      fetch("/partials/navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.body.insertAdjacentHTML("afterbegin", html);
+        });
+    </script>
     <script src="js/tabs.js"></script>
     <script src="js/nav.js"></script>
   </body>

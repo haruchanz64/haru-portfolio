@@ -26,33 +26,6 @@
     <link rel="icon" type="image/png" href="../res/icon.png">
   </head>
   <body>
-    <div id="progress-container"><div id="progress-bar"></div></div>
-
-    <nav class="nav">
-      <div class="nav-container">
-            <a href="../index.html#hero" class="nav-logo">
-      <img src="../res/icon.png" alt="Haru" style="height: 48px;" />
-    </a>
-        <ul class="nav-links">
-          <li><a href="../index.html#background" class="nav-link">About</a></li>
-          <li>
-            <a href="../index.html#projects" class="nav-link">Projects</a>
-          </li>
-          <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
-          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
-          <li><a href="./index.html" class="nav-link active">Blog</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle">
-            <i class="fas fa-sun"></i>
-          </button>
-          <button id="burger-menu-toggle" class="burger-menu">
-            <i class="fas fa-ellipsis-vertical"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
-
     <main class="blog-post-container">
       <a href="./blog.html" class="back-home">
         <i class="fas fa-arrow-left"></i> Back to Blog
@@ -68,5 +41,12 @@
 
     <script src="../js/nav.js" defer></script>
     <script src="../js/reader.js" defer></script>
+    <script>
+      fetch('../partials/navbar.html')
+        .then(res => res.text())
+        .then(html => {
+          document.body.insertAdjacentHTML('afterbegin', html);
+        });
+    </script>
   </body>
 </html>
