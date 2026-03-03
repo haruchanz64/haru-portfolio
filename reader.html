@@ -4,31 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      const theme = localStorage.getItem("theme");
-      if (theme === "light") {
+      if (!window.matchMedia("(prefers-color-scheme: dark)").matches)
         document.documentElement.classList.add("light-theme");
-      }
     </script>
     <title>Haru | Blog</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link rel="preload" href="/blog/posts.json" as="fetch" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="../js/theme.js" defer></script>
-    <script src="../js/nav.js" defer></script>
-    <link rel="icon" type="image/png" href="../res/icon.png">
+
+    <link rel="icon" type="image/png" href="/res/icon.png" />
+
+    <script src="/js/paths.js"></script>
+    <script src="/js/theme.js" defer></script>
+    <script src="/js/nav.js" defer></script>
   </head>
   <body>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
     <main class="blog-post-container">
-      <a href="./blog.html" class="back-home">
+      <a href="/blog.html" class="back-home">
         <i class="fas fa-arrow-left"></i> Back to Blog
       </a>
       <div id="post-content">
@@ -39,15 +50,8 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-    <script src="../js/reader.js" defer></script>
-    <script>
-      fetch('../partials/navbar.html')
-        .then(res => res.text())
-        .then(html => {
-          document.body.insertAdjacentHTML('afterbegin', html);
-          if (window.initThemeToggle) window.initThemeToggle();
-          if (window.initNav) window.initNav();
-        });
-    </script>
+
+    <script src="/js/reader.js" defer></script>
+    <script src="/js/navbar-loader.js" defer></script>
   </body>
 </html>

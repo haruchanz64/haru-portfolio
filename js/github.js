@@ -17,9 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return res.json();
     })
     .then(repos => {
-      grid.innerHTML = ''; // Clear loading text
+      grid.innerHTML = '';
 
-      // Filter only the repos we want
       const filtered = repos.filter(repo => PINNED_REPOS.includes(repo.name));
 
       if (filtered.length === 0) {
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Preserve the order defined in PINNED_REPOS array
       PINNED_REPOS.forEach(name => {
         const repo = filtered.find(r => r.name === name);
         if (!repo) return;

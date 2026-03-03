@@ -1,7 +1,18 @@
-function createBlogCard(post, basePath = "") {
+const _postCache = {};
+
+async function fetchPosts() {
+  if (_postCache[PATHS.posts]) return _postCache[PATHS.posts];
+  const res = await fetch(PATHS.posts);
+  if (!res.ok) throw new Error(`Failed to fetch posts: ${res.status}`);
+  const data = await res.json();
+  _postCache[PATHS.posts] = data;
+  return data;
+}
+
+function createBlogCard(post) {
   const card = document.createElement("a");
   card.className = "blog-card";
-  card.href = `${basePath}reader.html?id=${post.id}`;
+  card.href = `${PATHS.reader}?id=${post.id}`;
   card.innerHTML = `
     <div class="blog-card-top">
       <h3 class="blog-card-title">${post.title}</h3>
@@ -18,15 +29,9 @@ function createBlogCard(post, basePath = "") {
   return card;
 }
 
-async function fetchPosts(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`Failed to fetch posts: ${res.status}`);
-  return res.json();
-}
-
-function renderCards(grid, posts, basePath = "") {
+function renderCards(grid, posts) {
   const fragment = document.createDocumentFragment();
-  posts.forEach((post) => fragment.appendChild(createBlogCard(post, basePath)));
+  posts.forEach((post) => fragment.appendChild(createBlogCard(post)));
   grid.innerHTML = "";
   grid.appendChild(fragment);
 }
@@ -34,9 +39,8 @@ function renderCards(grid, posts, basePath = "") {
 async function initBlog() {
   const grid = document.getElementById("blog-grid");
   if (!grid) return;
-
   try {
-    const posts = await fetchPosts("./posts.json");
+    const posts = await fetchPosts();
     renderCards(grid, posts);
   } catch (err) {
     console.error("Error loading blog feed:", err);
@@ -47,16 +51,13 @@ async function initBlog() {
 async function initBlogPreview() {
   const grid = document.getElementById("blog-preview-grid");
   if (!grid) return;
-
   try {
-    const posts = await fetchPosts("./blog/posts.json");
-    renderCards(grid, posts.slice(0, 2), "./blog/");
+    const posts = await fetchPosts();
+    renderCards(grid, posts.slice(0, 2));
   } catch (err) {
     console.error("Error loading blog preview:", err);
   }
 }
-
-// ─── Boot ───
 
 document.addEventListener("DOMContentLoaded", () => {
   initBlog();

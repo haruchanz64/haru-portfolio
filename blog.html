@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (!window.matchMedia("(prefers-color-scheme: dark)").matches)
+        document.documentElement.classList.add("light-theme");
+    </script>
+    <title>Haru | Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link rel="preload" href="/posts.json" as="fetch" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /></noscript>
+
+    <link rel="icon" type="image/png" href="/res/icon.png" />
+
+    <script src="/js/paths.js"></script>
+    <script src="/js/blog-config.js" defer></script>
+    <script src="/js/github.js" defer></script>
+    <script src="/js/theme.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+  </head>
+  <body>
+    <section id="blog" class="section">
+      <a href="/index.html" class="back-home" style="margin-bottom: 2rem">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <h2 class="section-title">Blog</h2>
+      <div id="blog-grid"></div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/navbar-loader.js" defer></script>
+  </body>
+</html>

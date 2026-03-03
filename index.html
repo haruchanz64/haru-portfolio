@@ -1,48 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      const theme = localStorage.getItem("theme");
-      if (theme === "light") {
+      if (!window.matchMedia("(prefers-color-scheme: dark)").matches)
         document.documentElement.classList.add("light-theme");
-      }
     </script>
     <title>Haru | Game Systems, Backend Engineer & DevOps</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-    </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="res/icon.png" />
-    <script src="js/observer.js" defer></script>
-    <script src="js/url-hash-manager.js" defer></script>
-    <script src="js/blog-config.js" defer></script>
-    <script src="js/github.js" defer></script>
-    <script src="js/theme.js" defer></script>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link rel="preload" href="/res/icon.png" as="image" />
+    <link rel="preload" href="/style.css" as="style" />
+    <link rel="preload" href="/posts.json" as="fetch" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /></noscript>
+
+    <link rel="icon" type="image/png" href="/res/icon.png" />
+
+    <script src="/js/paths.js"></script>
+    <script src="/js/observer.js" defer></script>
+    <script src="/js/url-hash-manager.js" defer></script>
+    <script src="/js/blog-config.js" defer></script>
+    <script src="/js/github.js" defer></script>
+    <script src="/js/theme.js" defer></script>
     <script src="/js/nav.js" defer></script>
   </head>
   <body>
+ <body>
     <section id="hero" class="hero">
       <div class="hero-content">
         <img
           src="./res/icon.png"
           alt="Haru Logo"
           style="height: 128px; margin-bottom: 1rem"
+          fetchpriority="high"
         />
         <div class="hero-greeting">Hello, I'm</div>
         <h1 class="hero-name">Haru</h1>
@@ -93,132 +93,10 @@
           <p class="loading-text">Loading projects...</p>
         </div>
       </div>
+    </section>
 
-      <!-- Games Category
-      <div class="project-category">
-        <div class="category-header">
-          <span class="category-label">
-            <i class="fas fa-gamepad"></i> Games
-          </span>
-          <div class="category-divider"></div>
-        </div>
-        <div class="projects-grid">
-          <a
-            href="https://youtu.be/_yQ9IA0cQ-A"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <img
-              class="project-thumb"
-              src="https://img.youtube.com/vi/_yQ9IA0cQ-A/hqdefault.jpg"
-              alt="Trash Frenzy"
-            />
-            <div class="project-info">
-              <h3 class="project-title">Trash Frenzy</h3>
-              <p class="project-description">
-                Aquatic clean-up sim set in Philippine tourist spots. Defeat
-                Atlantis to restore the ocean.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">Project Manager</span>
-                <span class="role-tag">Gameplay Programmer</span>
-                <span class="role-tag">Game Designer</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://youtu.be/PnV9KYkl3QY"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <img
-              class="project-thumb"
-              src="https://img.youtube.com/vi/PnV9KYkl3QY/hqdefault.jpg"
-              alt="Lifebound"
-            />
-            <div class="project-info">
-              <h3 class="project-title">Lifebound</h3>
-              <p class="project-description">
-                3D co-op adventure. Solve puzzles to escape an underground
-                world.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">Gameplay Programmer</span>
-                <span class="role-tag">Multiplayer Engineer</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://youtu.be/2WEyH6xaqGk"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <img
-              class="project-thumb"
-              src="https://img.youtube.com/vi/2WEyH6xaqGk/hqdefault.jpg"
-              alt="Night Light"
-            />
-            <div class="project-info">
-              <h3 class="project-title">Night Light</h3>
-              <p class="project-description">
-                Atmospheric platformer. Collect light orbs to save the world
-                from darkness.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">Project Manager</span>
-                <span class="role-tag">Gameplay Programmer</span>
-                <span class="role-tag">Game Designer</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://youtu.be/BuCFdMbFZus"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <img
-              class="project-thumb"
-              src="https://img.youtube.com/vi/BuCFdMbFZus/hqdefault.jpg"
-              alt="Orders Please"
-            />
-            <div class="project-info">
-              <h3 class="project-title">Orders Please</h3>
-              <p class="project-description">
-                Street food sim. Manage orders and cook under time pressure.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">Gameplay Programmer</span>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://youtu.be/seB4NQnSA40"
-            target="_blank"
-            class="project-card uniform"
-          >
-            <img
-              class="project-thumb"
-              src="https://img.youtube.com/vi/seB4NQnSA40/hqdefault.jpg"
-              alt="Cyclescape"
-            />
-            <div class="project-info">
-              <h3 class="project-title">Cyclescape</h3>
-              <p class="project-description">
-                Educational journey through the menstrual cycle. Break stigmas
-                via exploration.
-              </p>
-              <div class="project-meta">
-                <span class="role-tag">Gameplay Programmer</span>
-                <span class="role-tag">Game Designer</span>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section> -->
     <section id="skills" class="section">
       <h2 class="section-title">Skills</h2>
-
       <div class="skills-tabs">
         <button class="skill-tab active" data-skill="languages">
           Languages
@@ -233,6 +111,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
               alt="C#"
+              loading="lazy"
             />
             <span class="skill-name">C#</span>
           </div>
@@ -240,6 +119,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
               alt="Java"
+              loading="lazy"
             />
             <span class="skill-name">Java</span>
           </div>
@@ -247,6 +127,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
               alt="C++"
+              loading="lazy"
             />
             <span class="skill-name">C++</span>
           </div>
@@ -254,6 +135,7 @@
             <img
               src="https://www.svgrepo.com/show/374056/rust.svg"
               alt="Rust"
+              loading="lazy"
             />
             <span class="skill-name">Rust</span>
           </div>
@@ -266,6 +148,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"
               alt="ASP.NET Core"
+              loading="lazy"
             />
             <span class="skill-name">ASP.NET Core</span>
           </div>
@@ -273,6 +156,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
               alt="Spring Boot"
+              loading="lazy"
             />
             <span class="skill-name">Spring Boot</span>
           </div>
@@ -280,6 +164,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
               alt="Docker"
+              loading="lazy"
             />
             <span class="skill-name">Docker</span>
           </div>
@@ -287,6 +172,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
               alt="Git"
+              loading="lazy"
             />
             <span class="skill-name">Git</span>
           </div>
@@ -299,6 +185,7 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
               alt="Unity"
+              loading="lazy"
             />
             <span class="skill-name">Unity</span>
           </div>
@@ -306,29 +193,14 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg"
               alt="Godot"
+              loading="lazy"
             />
             <span class="skill-name">Godot</span>
           </div>
         </div>
       </div>
     </section>
-    <!-- Blog Preview Section -->
-    <section id="blog-preview" class="section">
-      <h2 class="section-title">Blog</h2>
-      <p
-        class="background-text"
-        style="text-align: center; margin-bottom: 2rem"
-      >
-        I write about systems engineering, game dev tooling, and developer
-        experience.
-      </p>
-      <div id="blog-preview-grid"></div>
-      <div style="text-align: center; margin-top: 2rem">
-        <a href="./blog/blog.html" class="cta-button">
-          View All Posts <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </section>
+
     <section id="contact" class="section contact">
       <div class="contact-content">
         <h2 class="contact-title">Get in Touch</h2>
@@ -365,15 +237,8 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-    <script>
-      fetch("/partials/navbar.html")
-        .then((res) => res.text())
-        .then((html) => {
-          document.body.insertAdjacentHTML("afterbegin", html);
-          if (window.initThemeToggle) window.initThemeToggle();
-          if (window.initNav) window.initNav();
-        });
-    </script>
-    <script src="js/tabs.js"></script>
+
+    <script src="/js/tabs.js" defer></script>
+    <script src="/js/navbar-loader.js" defer></script>
   </body>
 </html>

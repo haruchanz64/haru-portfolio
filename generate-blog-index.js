@@ -4,6 +4,7 @@ const path = require('path');
 const POSTS_DIR = path.join(__dirname, 'blog/posts');
 const OUTPUT_FILE = path.join(__dirname, 'blog/posts.json');
 
+// Generate the posts.json index file by reading markdown files and extracting metadata
 function generateIndex() {
     const files = fs.readdirSync(POSTS_DIR).filter(file => file.endsWith('.md'));
     const posts = [];

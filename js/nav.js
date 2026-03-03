@@ -24,13 +24,13 @@ navLinkItems.forEach((link) => {
   });
 });
 
+// Highlight the active navigation link based on scroll position
 function highlightNavOnScroll() {
   const scrollY = window.pageYOffset;
   const pageBottom = document.documentElement.scrollHeight - window.innerHeight;
 
   if (scrollY >= pageBottom - 5) {
     navLinkItems.forEach((link) => link.classList.remove("active"));
-    // Find the last nav link that actually corresponds to a section
     const sectionLinks = [...navLinkItems].filter((link) => {
       const href = link.getAttribute("href");
       return href && href.startsWith("#");
