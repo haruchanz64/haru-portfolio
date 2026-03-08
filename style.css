@@ -286,23 +286,95 @@ body {
   transition: all var(--transition);
 }
 
+.contact-form {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 500px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+  resize: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(255, 124, 159, 0.12);
+}
+
+.form-submit {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.9rem 2rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+  width: 100%;
+}
+
+.form-submit:hover:not(:disabled) { background: var(--accent-secondary); }
+.form-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.form-toast {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-align: center;
+  min-height: 1.2em;
+}
+
+.form-toast.success { color: var(--accent-primary); }
+.form-toast.error   { color: var(--accent-secondary); }
+
 .cta-button {
   font-family: var(--font-display);
   animation-delay: 0.8s;
 }
 
-.contact-email {
-  font-family: var(--font-mono);
-  margin-bottom: 2rem;
-}
-
 .cta-button:hover {
   background: var(--accent-secondary);
   color: var(--bg-primary);
-}
-
-.contact-email:hover {
-  transform: translateY(-2px);
 }
 
 .section {
