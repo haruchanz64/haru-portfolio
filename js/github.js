@@ -1,9 +1,10 @@
 const GITHUB_USERNAME = 'haruchanz64';
 const PINNED_REPOS = [
-  'UnityEventToolkit',
-  'DebugCommandSystem',
-  'ScriptableBatchTool',
-  'SaveEncryptionToolkit'
+  "gdrive-cli",
+  "UnityEventToolkit",
+  "DebugCommandSystem",
+  "ScriptableBatchTool",
+  "SaveEncryptionToolkit",
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
