@@ -1,11 +1,10 @@
 import emailjs from "@emailjs/browser";
 
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+emailjs.init(import.meta.env.EMAILJS_PUBLIC_KEY);
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_NOTIFICATION = import.meta.env
-  .VITE_EMAILJS_TEMPLATE_NOTIFICATION;
-const TEMPLATE_AUTOREPLY = import.meta.env.VITE_EMAILJS_TEMPLATE_AUTOREPLY;
+const SERVICE_ID = import.meta.env.EMAILJS_SERVICE_ID;
+const TEMPLATE_NOTIFICATION = import.meta.env.EMAILJS_TEMPLATE_NOTIFICATION;
+const TEMPLATE_AUTOREPLY = import.meta.env.EMAILJS_TEMPLATE_AUTOREPLY;
 
 export function sendEmail(e) {
   e.preventDefault();
