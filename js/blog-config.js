@@ -1,18 +1,26 @@
+const PATHS = window.PATHS || {};
+const postsUrl = PATHS.posts || "/blog/posts.json";
 const _postCache = {};
 
+async function loadPosts() {
+  const res = await fetch(postsUrl, { cache: "no-cache" });
+  if (!res.ok) {
+    throw new Error(`Failed to load posts: ${res.status} (${postsUrl})`);
+  }
+  return res.json();
+}
+
 async function fetchPosts() {
-  if (_postCache[PATHS.posts]) return _postCache[PATHS.posts];
-  const res = await fetch(PATHS.posts);
-  if (!res.ok) throw new Error(`Failed to fetch posts: ${res.status}`);
-  const data = await res.json();
-  _postCache[PATHS.posts] = data;
+  if (_postCache[postsUrl]) return _postCache[postsUrl];
+  const data = await loadPosts();
+  _postCache[postsUrl] = data;
   return data;
 }
 
 function createBlogCard(post) {
   const card = document.createElement("a");
   card.className = "blog-card";
-  card.href = `${PATHS.reader}?id=${post.id}`;
+  card.href = `${PATHS.reader || "/reader.html"}?id=${post.id}`;
   card.innerHTML = `
     <div class="blog-card-top">
       <h3 class="blog-card-title">${post.title}</h3>

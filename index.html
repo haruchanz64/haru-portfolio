@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      if (!window.matchMedia("(prefers-color-scheme: dark)").matches)
-        document.documentElement.classList.add("light-theme");
-    </script>
     <title>Haru | Software Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +13,7 @@
     <link rel="preload" href="/res/icon.png" as="image" />
     <link rel="preload" href="/style.css" as="style" />
     <link rel="preload" href="/posts.json" as="fetch" crossorigin="anonymous" />
+    <link rel="preload" href="/blog/posts.json" as="fetch" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -27,9 +24,9 @@
     <link rel="icon" type="image/png" href="/res/icon.png" />
 
     <script src="/js/paths.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
- <body>
     <section id="hero" class="hero">
       <div class="hero-content">
         <img
@@ -227,7 +224,6 @@
   </button>
   <p class="form-toast" id="form-toast"></p>
 </form>
-</a>
         <div class="social-links">
           <a
             href="https://www.linkedin.com/in/aronjakeradam/"
@@ -254,6 +250,5 @@
     <footer class="footer">
       <p>&copy; 2024 Aron Jake S. Radam. All rights reserved.</p>
     </footer>
-    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

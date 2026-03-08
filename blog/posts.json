@@ -1,5 +1,17 @@
 [
   {
+    "id": "creating-git-like-google-drive",
+    "title": "Creating Git-like Google Drive",
+    "date": "Mar 08, 2026",
+    "readTime": 2,
+    "tags": [
+      "#Software",
+      "#CLI",
+      "#Architecture"
+    ],
+    "filePath": "posts/creating-git-like-google-drive.md"
+  },
+  {
     "id": "automating-the-creation-of-blogs-via-markdown",
     "title": "Automating the Creation of Blogs via Markdown",
     "date": "Feb 24, 2026",

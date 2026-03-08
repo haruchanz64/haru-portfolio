@@ -1,14 +1,35 @@
-import {sendEmail} from './contact.js';
+(async () => {
+  // Load navbar early so it still appears even if other modules fail
+  try {
+    await import("./navbar-loader.js");
+  } catch (err) {
+    console.error("Failed to load navbar-loader:", err);
+  }
 
-// Expose sendEmail to the global scope for use in the HTML form
-window.sendEmail = sendEmail;
+  // Optional: contact form
+  try {
+    const { sendEmail } = await import("./contact.js");
+    window.sendEmail = sendEmail;
+  } catch (err) {
+    console.error("Failed to load contact.js:", err);
+  }
 
-// Import any other scripts that need initializing
-import './observer.js';
-import './url-hash-manager.js';
-import './blog-config.js';
-import './github.js';
-import './theme.js';
-import './nav.js';
-import './navbar-loader.js';
-import './tabs.js';
+  // Load the rest without hard-failing the whole app
+  const modules = [
+    "./observer.js",
+    "./url-hash-manager.js",
+    "./blog-config.js",
+    "./github.js",
+    "./theme.js",
+    "./nav.js",
+    "./tabs.js",
+  ];
+
+  for (const mod of modules) {
+    try {
+      await import(mod);
+    } catch (err) {
+      console.error(`Failed to load ${mod}:`, err);
+    }
+  }
+})();
